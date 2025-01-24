@@ -1,0 +1,6 @@
+draw_circle(x-15, y-15, 30.0, true)
+draw_text(x+5, y+5, x)
+draw_text(x+5, y+15, y)
+draw_text(x+5, y+25, x_vel)
+draw_text(x+5, y+35, y_vel)
+draw_circle(draw_x-2, draw_y-2, 4.0, false)
