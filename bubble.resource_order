@@ -7,6 +7,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"objKrill","order":1,"path":"objects/objKrill/objKrill.yy",},
+    {"name":"scrLevelTransition","order":1,"path":"scripts/scrLevelTransition/scrLevelTransition.yy",},
     {"name":"sprAmoebaBall","order":3,"path":"sprites/sprAmoebaBall/sprAmoebaBall.yy",},
     {"name":"sprAmoebaBody","order":1,"path":"sprites/sprAmoebaBody/sprAmoebaBody.yy",},
     {"name":"sprAmoebaEat","order":2,"path":"sprites/sprAmoebaEat/sprAmoebaEat.yy",},

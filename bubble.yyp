@@ -77,6 +77,7 @@
     {"id":{"name":"Room8","path":"rooms/Room8/Room8.yy",},},
     {"id":{"name":"Room9","path":"rooms/Room9/Room9.yy",},},
     {"id":{"name":"scrGeneral","path":"scripts/scrGeneral/scrGeneral.yy",},},
+    {"id":{"name":"scrLevelTransition","path":"scripts/scrLevelTransition/scrLevelTransition.yy",},},
     {"id":{"name":"sprAmoebaBall","path":"sprites/sprAmoebaBall/sprAmoebaBall.yy",},},
     {"id":{"name":"sprAmoebaBody","path":"sprites/sprAmoebaBody/sprAmoebaBody.yy",},},
     {"id":{"name":"sprAmoebaEat","path":"sprites/sprAmoebaEat/sprAmoebaEat.yy",},},
