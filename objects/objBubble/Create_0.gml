@@ -4,7 +4,7 @@ pusherX = 0;
 pusherY = 0;
 speedRatio = .05;
 grabbed = false;
-maxSpeed = 100;
+maxSpeed = 500;
 maxVel = 1.0;
 maxDist = 32;
 originX = 0;
@@ -14,9 +14,9 @@ invulnTime = 100;
 flashTime = 5;
 bubbleSize = 3;
 bounceDampening = .5;
-minPushDist = 10;
-maxPushDist = 50;
-pushForce = 0.1;
+minPushDist = 20;
+maxPushDist = 100;
+pushForce = 0.15;
 event_inherited()
 function split()
 {
