@@ -49,6 +49,10 @@ if grounded
     else
     {
         var nearestBubble = instance_nearest(x,y,objBilliardsBubble);
+        if point_distance(x,y,nearestBubble.x,nearestBubble.y)
+        {
+            
+        }
         
     }
 }
