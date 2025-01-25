@@ -1,7 +1,3 @@
-
-
-event_inherited();
-
 if (instance_place(x, y, objBubble)) {
     var i = instance_place(x, y, objBubble)
     if i != noone {
@@ -13,3 +9,4 @@ if (instance_place(x, y, objBubble)) {
         }
     }
 }
+event_inherited();
