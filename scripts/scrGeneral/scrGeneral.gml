@@ -26,3 +26,8 @@ surface_resize(application_surface, 320, 240);
 #macro cam view_camera[0]
 
 
+function Sleep(durration){	
+	var _freezeDur = durration
+	var _t = current_time + _freezeDur
+	while (current_time < _t) { }
+}
