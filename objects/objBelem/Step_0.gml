@@ -2,6 +2,14 @@ if !grounded
 {
     yVel += decelRate;
     yVel = min(yVel, fallSpeed);
+    if jumpTimer > 0
+    {
+        jumpTimer--
+        if jumpTimer = 0
+        {
+            sprite_index = sprBelemJump
+        }
+    }
     if !falling
     {
       if yVel > 0
@@ -48,12 +56,25 @@ if grounded
     }
     else
     {
-        var nearestBubble = instance_nearest(x,y,objBilliardsBubble);
-        if point_distance(x,y,nearestBubble.x,nearestBubble.y)
-        {
-            
-        }
         var nearestBubble = instance_nearest(x,y,objBubble);
+        if abs(x - nearestBubble.x) < peekDistX && y - nearestBubble.y < peekDistY && y - nearestBubble.y >0
+        {
+            if abs(x - nearestBubble.x) < jumpDist
+            {
+                image_index = 2;
+                jumpTimer = frameRate;
+                grounded = false;
+                yVel -= jumpSpeed;
+            }
+            else
+            {
+                image_index = 1
+            }
+        }
+        else
+        {
+            image_index = 0;
+        }
 
     }
 }
