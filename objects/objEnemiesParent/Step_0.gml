@@ -17,8 +17,8 @@ if grabbed
 	{
 		instance_destroy()
 	}
-	x = lerp(x, grabbedX, 0.5/abs(grabbedX - x))
-	y = lerp(y, grabbedY, 0.5/abs(grabbedY - y))
+	x = lerp(x, grabbedX, suckSpeed)
+	y = lerp(y, grabbedY, suckSpeed)
 	image_xscale = min(1, (abs(grabbedX - x) + abs(grabbedY - y))*scaleMult)
 	image_yscale = min(1, (abs(grabbedX - x) + abs(grabbedY - y))*scaleMult)
 }
