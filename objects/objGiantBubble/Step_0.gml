@@ -1,7 +1,7 @@
 if pushTimeR % pushTime == 0
 {
 	var target = instance_nearest(x,y,objBilliardsBubble)
-	if target != "noone"
+	if target != noone
 	{
 		xVel = lengthdir_x(moveSpeed, point_direction(x,y,target.x,target.y));
 		yVel = lengthdir_y(moveSpeed, point_direction(x,y,target.x,target.y));
