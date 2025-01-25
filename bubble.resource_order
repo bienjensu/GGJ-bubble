@@ -2,13 +2,16 @@
   "FolderOrderSettings":[
     {"name":"amoeba","order":1,"path":"folders/Sprites/enemies/amoeba.yy",},
     {"name":"belemnite","order":2,"path":"folders/Sprites/enemies/belemnite.yy",},
+    {"name":"krills","order":6,"path":"folders/Sprites/enemies/krills.yy",},
     {"name":"starfish","order":3,"path":"folders/Sprites/enemies/starfish.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"objKrill","order":1,"path":"objects/objKrill/objKrill.yy",},
     {"name":"sprAmoebaBall","order":3,"path":"sprites/sprAmoebaBall/sprAmoebaBall.yy",},
     {"name":"sprAmoebaBody","order":1,"path":"sprites/sprAmoebaBody/sprAmoebaBody.yy",},
     {"name":"sprAmoebaEat","order":2,"path":"sprites/sprAmoebaEat/sprAmoebaEat.yy",},
-    {"name":"sprAmoebaEye","order":4,"path":"sprites/sprAmoebaEye/sprAmoebaEye.yy",},
+    {"name":"sprKrill2","order":1,"path":"sprites/sprKrill2/sprKrill2.yy",},
+    {"name":"sprKrillGold","order":2,"path":"sprites/sprKrillGold/sprKrillGold.yy",},
     {"name":"sprLionfish","order":4,"path":"sprites/sprLionfish/sprLionfish.yy",},
     {"name":"sprUrchin","order":5,"path":"sprites/sprUrchin/sprUrchin.yy",},
   ],
