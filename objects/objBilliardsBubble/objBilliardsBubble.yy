@@ -31,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sprBubble",
+    "path":"sprites/sprBubble/sprBubble.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

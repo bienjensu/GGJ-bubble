@@ -5,8 +5,10 @@
     {"name":"Fonts","order":7,"path":"folders/Fonts.yy",},
     {"name":"Notes","order":13,"path":"folders/Notes.yy",},
     {"name":"Objects","order":9,"path":"folders/Objects.yy",},
+    {"name":"Colliders","order":4,"path":"folders/Objects/Colliders.yy",},
     {"name":"Controllers","order":1,"path":"folders/Objects/Controllers.yy",},
     {"name":"enemies","order":2,"path":"folders/Objects/enemies.yy",},
+    {"name":"Boss","order":1,"path":"folders/Objects/enemies/Boss.yy",},
     {"name":"player Bubble","order":3,"path":"folders/Objects/player Bubble.yy",},
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
     {"name":"Paths","order":4,"path":"folders/Paths.yy",},
@@ -21,5 +23,10 @@
   ],
   "ResourceOrderSettings":[
     {"name":"objBilliardsBubble","order":1,"path":"objects/objBilliardsBubble/objBilliardsBubble.yy",},
+    {"name":"objColliderHurt","order":1,"path":"objects/objColliderHurt/objColliderHurt.yy",},
+    {"name":"objEnemiesParent","order":2,"path":"objects/objEnemiesParent/objEnemiesParent.yy",},
+    {"name":"sprBubble","order":1,"path":"sprites/sprBubble/sprBubble.yy",},
+    {"name":"sprCollider","order":2,"path":"sprites/sprCollider/sprCollider.yy",},
+    {"name":"sprColliderHurt","order":3,"path":"sprites/sprColliderHurt/sprColliderHurt.yy",},
   ],
 }

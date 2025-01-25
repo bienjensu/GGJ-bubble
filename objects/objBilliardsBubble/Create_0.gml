@@ -5,3 +5,40 @@ pusherY = 0;
 speedRatio = .05;
 grabbed = false;
 maxSpeed = 100;
+maxDist = 32;
+originX = 0;
+originY = 0;
+invulnTimeR = 0;
+invulnTime = 100;
+flashTime = 5;
+bubbleSize = 3;
+bounceDampening = .5;
+
+function split()
+{
+	if invulnTimeR == 0
+	{
+		grabbed = false;
+		invulnTimeR = invulnTime;
+		bubbleSize --;
+		//destroy bubble if it is too small
+		if bubbleSize == 0
+		{
+			instance_destroy();
+			exit;
+		}
+		//calculate move distance and angle
+		var moveAngle = point_direction(x,y,x+xVel,y+yVel);
+		var moveDist = sqrt(sqr(xVel)+sqr(yVel));
+		//get two new velocities at 45 degree angle from the original and give them to the new bubble and current one
+		var xVelNew = lengthdir_x(moveDist,moveAngle+45);
+		var yVelNew = lengthdir_y(moveDist, moveAngle+45);
+		xVel = lengthdir_x(moveDist, moveAngle-45);
+		yVel = lengthdir_y(moveDist, moveAngle-45);
+		var bubble = instance_create_depth(x,y,10,objBilliardsBubble);
+		bubble.xVel = xVelNew;
+		bubble.yVel = yVelNew;
+		bubble.bubbleSize = bubbleSize;
+		bubble.invulnTimeR = invulnTime;
+	}
+}

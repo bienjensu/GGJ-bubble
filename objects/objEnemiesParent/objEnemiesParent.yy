@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"objGiantBubble",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"objEnemiesParent",
+  "eventList":[],
   "managed":true,
-  "name":"objGiantBubble",
+  "name":"objEnemiesParent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Boss",
-    "path":"folders/Objects/enemies/Boss.yy",
+    "name":"enemies",
+    "path":"folders/Objects/enemies.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sprGiantBubble",
-    "path":"sprites/sprGiantBubble/sprGiantBubble.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

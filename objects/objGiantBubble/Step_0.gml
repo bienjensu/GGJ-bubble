@@ -1,7 +1,7 @@
 if pushTimeR % pushTime == 0
 {
-	xVel = lengthdir_x(moveSpeed, point_direction(x,y,objPlayerBubble.x,objPlayerBubble.y));
-	yVel = lengthdir_y(moveSpeed, point_direction(x,y,objPlayerBubble.x,objPlayerBubble.y));
+	xVel = lengthdir_x(moveSpeed, point_direction(x,y,objBilliardsBubble.x,objBilliardsBubble.y));
+	yVel = lengthdir_y(moveSpeed, point_direction(x,y,objBilliardsBubble.x,objBilliardsBubble.y));
 	pushTimeR = 0;
 }
 pushTimeR++
