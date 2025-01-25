@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"starfish",
-    "path":"folders/Sprites/enemies/starfish.yy",
+    "name":"enemies",
+    "path":"folders/Sprites/enemies.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
