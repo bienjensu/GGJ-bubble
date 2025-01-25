@@ -18,7 +18,7 @@ if mouse_check_button_released(mb_left) && grabbed
 // if rmb and not dragged, apply push force
 if !grabbed and mouse_check_button(mb_right) {
 	xDiff = x - mouse_x
-	yDiff = x - mouse_y
+	yDiff = y - mouse_y
 	
 	xNorm = xDiff/distance
 	yNorm = yDiff/distance
