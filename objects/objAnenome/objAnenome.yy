@@ -1,21 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"objShadowBubble",
+  "%Name":"objAnenome",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objShadowBubble",
+  "name":"objAnenome",
   "overriddenProperties":[],
   "parent":{
-    "name":"Boss",
-    "path":"folders/Objects/enemies/Boss.yy",
+    "name":"Regular",
+    "path":"folders/Objects/enemies/Regular.yy",
   },
-  "parentObjectId":{
-    "name":"objEnemiesParent",
-    "path":"objects/objEnemiesParent/objEnemiesParent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sprShadowBubble",
-    "path":"sprites/sprShadowBubble/sprShadowBubble.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
