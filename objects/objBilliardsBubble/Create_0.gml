@@ -44,5 +44,22 @@ function split()
 		bubble.yVel = yVelNew;
 		bubble.bubbleSize = bubbleSize;
 		bubble.invulnTimeR = invulnTime;
+		
+		switch bubble.bubbleSize {
+			case 3: bubble.sprite_index = sprBubbleLarge
+			break;
+			case 2: bubble.sprite_index = sprBubbleMedium
+			break;
+			case 1: bubble.sprite_index = sprBubbleSmall
+			break;
+		}
+		switch bubbleSize {
+			case 3: sprite_index = sprBubbleLarge
+			break;
+			case 2: sprite_index = sprBubbleMedium
+			break;
+			case 1: sprite_index = sprBubbleSmall
+			break;
+		}
 	}
 }
