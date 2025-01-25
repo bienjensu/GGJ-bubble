@@ -5,8 +5,8 @@ if target != noone
 	target.split()
 }
 
-x = lerp(x, maxDistX, .1);
-y = lerp(y, maxDistY, .1);
+x = lerp(x, maxDistX, 0.05);
+y = lerp(y, maxDistY, 0.05);
 killTimer ++
 if killTimer > killTimeMax
 {

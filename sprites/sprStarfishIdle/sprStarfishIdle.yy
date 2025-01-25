@@ -1,11 +1,11 @@
 {
   "$GMSprite":"",
   "%Name":"sprStarfishIdle",
-  "bboxMode":0,
-  "bbox_bottom":30,
-  "bbox_left":1,
-  "bbox_right":30,
-  "bbox_top":1,
+  "bboxMode":2,
+  "bbox_bottom":22,
+  "bbox_left":10,
+  "bbox_right":22,
+  "bbox_top":10,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -14,8 +14,6 @@
   "frames":[
     {"$GMSpriteFrame":"","%Name":"8590d2b7-c4a8-47e6-bf18-041ae3397e20","name":"8590d2b7-c4a8-47e6-bf18-041ae3397e20","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"d62e67a5-c19c-4a3c-ab2c-2606ad8d1c9d","name":"d62e67a5-c19c-4a3c-ab2c-2606ad8d1c9d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"22ad1765-d36e-4673-901c-916f789aeee2","name":"22ad1765-d36e-4673-901c-916f789aeee2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"76031861-2f85-461f-880f-e3fbff302ecb","name":"76031861-2f85-461f-880f-e3fbff302ecb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -28,8 +26,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"starfish",
+    "path":"folders/Sprites/enemies/starfish.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -52,7 +50,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":4.0,
+    "length":2.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -77,12 +75,6 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d62e67a5-c19c-4a3c-ab2c-2606ad8d1c9d","path":"sprites/sprStarfishIdle/sprStarfishIdle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"f5d84644-18ca-4ae7-a178-32e249f902b6","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"22ad1765-d36e-4673-901c-916f789aeee2","path":"sprites/sprStarfishIdle/sprStarfishIdle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"befea8ee-5f88-4e2e-adcc-9790d2180b09","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"76031861-2f85-461f-880f-e3fbff302ecb","path":"sprites/sprStarfishIdle/sprStarfishIdle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"0da8e374-398f-4e14-97c1-4bfc2c226452","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

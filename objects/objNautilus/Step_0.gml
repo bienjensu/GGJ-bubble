@@ -1,4 +1,4 @@
-if xVel < slowSpeed && moveTimer > pushFrame
+if abs(xVel < slowSpeed && moveTimer > pushFrame
 {
 	image_index = 0;
 }

@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"belemnite",
+    "path":"folders/Sprites/enemies/belemnite.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

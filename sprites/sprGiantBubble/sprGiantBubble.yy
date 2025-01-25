@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"amoeba",
+    "path":"folders/Sprites/enemies/amoeba.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

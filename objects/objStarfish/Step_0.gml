@@ -40,7 +40,7 @@ if !grabbed
 			sprite_index = sprStarfishShoot;
 			for(i = 0; i < shotsNum; i++)
 			{
-			var bulletAngle = i*(360/shotsNum);
+			var bulletAngle = i*(360/shotsNum) + 90;
 			var bulletX = x + lengthdir_x(sprite_width/2, bulletAngle);
 			var bulletY = y + lengthdir_y(sprite_width/2, bulletAngle);
 			var bullet = instance_create_depth(bulletX, bulletY, bulletDepth, objStarfishBullet);
