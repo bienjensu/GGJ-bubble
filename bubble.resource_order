@@ -10,6 +10,7 @@
     {"name":"enemies","order":2,"path":"folders/Objects/enemies.yy",},
     {"name":"Boss","order":1,"path":"folders/Objects/enemies/Boss.yy",},
     {"name":"Regular","order":4,"path":"folders/Objects/enemies/Regular.yy",},
+    {"name":"Spawners","order":5,"path":"folders/Objects/Spawners.yy",},
     {"name":"player Bubble","order":3,"path":"folders/Objects/player Bubble.yy",},
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
     {"name":"Paths","order":4,"path":"folders/Paths.yy",},
