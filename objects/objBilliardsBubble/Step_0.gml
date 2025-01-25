@@ -81,7 +81,10 @@ if curVel > maxVel {
 	multiplier = maxVel/curVel
 	xVel = lerp(xVel, xVel * multiplier, 0.1)
 	yVel = lerp(yVel, yVel * multiplier, 0.1)
+} else {
+	xVel = lerp(xVel, 0, 0.1)
 }
+yVel = lerp(yVel, -1.35, 0.1)
 
 _i = instance_place(x,y,objBilliardsBubble)
 if _i != noone {
