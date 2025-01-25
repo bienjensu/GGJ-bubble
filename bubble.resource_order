@@ -24,6 +24,7 @@
   "ResourceOrderSettings":[
     {"name":"objBilliardsBubble","order":1,"path":"objects/objBilliardsBubble/objBilliardsBubble.yy",},
     {"name":"objColliderHurt","order":1,"path":"objects/objColliderHurt/objColliderHurt.yy",},
+    {"name":"objEdgeWrapper","order":2,"path":"objects/objEdgeWrapper/objEdgeWrapper.yy",},
     {"name":"objEnemiesParent","order":2,"path":"objects/objEnemiesParent/objEnemiesParent.yy",},
     {"name":"objStageController","order":1,"path":"objects/objStageController/objStageController.yy",},
     {"name":"sprBubble","order":1,"path":"sprites/sprBubble/sprBubble.yy",},

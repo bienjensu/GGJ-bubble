@@ -36,30 +36,6 @@ if !grabbed and mouse_check_button(mb_right) {
 	xVel += xNorm * pushForce * k
 	yVel += yNorm * pushForce * k
 }
-//code for when bubble is hit; set split to true to initialise the code (probably better to put into a function actually hmm) edit: just did that
-/*if split
-{
-	grabbed = false;
-	bubbleSize --
-	if bubbleSize == 0
-	{
-		show_debug_message("killme");
-		instance_destroy();
-		exit;
-	}
-	var moveAngle = point_direction(x,y,x+xVel,y+yVel)
-	var moveDist = sqrt(sqr(xVel)+sqr(yVel))
-	var xVelNew = lengthdir_x(moveDist,moveAngle+45)
-	var yVelNew = lengthdir_y(moveDist, moveAngle+45)
-	xVel = lengthdir_x(moveDist, moveAngle-45)
-	yVel = lengthdir_y(moveDist, moveAngle-45)
-	var bubble = instance_create_depth(x,y,10,objBilliardsBubble)
-	bubble.xVel = xVelNew;
-	bubble.yVel = yVelNew;
-	bubble.bubbleSize = bubbleSize;
-	bubble.invulnTimeR = invulnTime;
-	split = false;
-}*/
 if invulnTimeR == 0
 {
 	image_alpha = 1;
@@ -110,3 +86,4 @@ if !grabbed
 	yVel += moved*bounceDampening;
 	yVel = clamp(yVel, -maxSpeed, maxSpeed);
 }
+event_inherited()

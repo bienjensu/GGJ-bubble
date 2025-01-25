@@ -16,7 +16,7 @@ bounceDampening = .5;
 minPushDist = 10;
 maxPushDist = 50;
 pushForce = 0.1;
-
+event_inherited()
 function split()
 {
 	if invulnTimeR == 0
