@@ -47,6 +47,8 @@
   },
   "name":"bubble",
   "resources":[
+    {"id":{"name":"fntCourier","path":"fonts/fntCourier/fntCourier.yy",},},
+    {"id":{"name":"fntMono","path":"fonts/fntMono/fntMono.yy",},},
     {"id":{"name":"objBelem","path":"objects/objBelem/objBelem.yy",},},
     {"id":{"name":"objBubble","path":"objects/objBubble/objBubble.yy",},},
     {"id":{"name":"objCollider","path":"objects/objCollider/objCollider.yy",},},
@@ -89,6 +91,7 @@
     {"id":{"name":"sprBubbleSmall","path":"sprites/sprBubbleSmall/sprBubbleSmall.yy",},},
     {"id":{"name":"sprCollider","path":"sprites/sprCollider/sprCollider.yy",},},
     {"id":{"name":"sprColliderHurt","path":"sprites/sprColliderHurt/sprColliderHurt.yy",},},
+    {"id":{"name":"sprEnemySpawner","path":"sprites/sprEnemySpawner/sprEnemySpawner.yy",},},
     {"id":{"name":"sprGiantBubble","path":"sprites/sprGiantBubble/sprGiantBubble.yy",},},
     {"id":{"name":"sprLionfish","path":"sprites/sprLionfish/sprLionfish.yy",},},
     {"id":{"name":"sprNautilus","path":"sprites/sprNautilus/sprNautilus.yy",},},

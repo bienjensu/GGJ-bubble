@@ -18,7 +18,7 @@ surface_resize(application_surface, 320, 240);
 #macro gamew 320
 #macro gameh 240
 
-
+draw_set_font(fntCourier)
 
 
 #macro log show_debug_message

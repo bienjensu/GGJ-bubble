@@ -7,6 +7,10 @@ ixo = 0
 iyo = 0
 hx = x
 hy = y
+ex = hx
+ey = hy
+dd = 0
+t = 0
 
 moveSpeed = 1;
 speedFalloff = .01;
