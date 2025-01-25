@@ -1,1 +1,2 @@
-// Timer
+// Score
+score = 0
