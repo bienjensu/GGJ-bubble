@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprStarfish",
-    "path":"sprites/sprStarfish/sprStarfish.yy",
+    "name":"sprStarfishIdle",
+    "path":"sprites/sprStarfishIdle/sprStarfishIdle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

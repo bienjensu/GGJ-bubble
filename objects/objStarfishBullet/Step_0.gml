@@ -1,11 +1,8 @@
 
 var target = instance_place(x,y,objBilliardsBubble)
-if target != "noone"
+if target != noone
 {
-	with(target)
-	{
-		split()
-	}
+	target.split()
 }
 
 x = lerp(x, maxDistX, .1);

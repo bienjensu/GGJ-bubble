@@ -6,17 +6,20 @@ if !grabbed
 		if rechargeTimer >0
 		{
 			rechargeTimer --
-			sprite_index = sprStarfishRecharging
-			vulnerable = true;
+			if rechargeTimer == rechargeTimeMax - postfireTime
+			{
+				sprite_index = sprStarfishVulnerable
+				vulnerable = true;
+			}
+
 			if rechargeTimer == flashTime
 			{
-				image_speed = flashSpeed
+				sprite_index = sprStarfishRecharging
 			}
 			if rechargeTimer == 0
 			{
 				vulnerable = false;
-				sprite_index = sprStarfish;
-				image_speed = 0;
+				sprite_index = sprStarfishIdle;
 			}
 		}
 		var nearestBubble = instance_nearest(x,y,objBilliardsBubble)
@@ -25,7 +28,7 @@ if !grabbed
 			if rechargeTimer == 0
 			{
 				shootTimer = prefireTime;
-				sprite_index = sprStarfishShoot;
+				sprite_index = sprStarfishPrefire;
 			}
 		}
 	}
@@ -34,6 +37,7 @@ if !grabbed
 		shootTimer --
 		if shootTimer == 0
 		{
+			sprite_index = sprStarfishShoot;
 			for(i = 0; i < shotsNum; i++)
 			{
 			var bulletAngle = i*(360/shotsNum);
@@ -54,10 +58,7 @@ if !grabbed
 		var target = instance_place(x,y,objBilliardsBubble)
 		if target != noone
 		{
-			with(target)
-			{
-				split()
-			}
+			target.split()
 		}
 	}
 }
