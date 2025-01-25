@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"objBilliardsBubble",
+  "%Name":"objBubble",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objBilliardsBubble",
+  "name":"objBubble",
   "overriddenProperties":[],
   "parent":{
-    "name":"player Bubble",
-    "path":"folders/Objects/player Bubble.yy",
+    "name":"Player",
+    "path":"folders/Objects/Player.yy",
   },
   "parentObjectId":{
     "name":"objEdgeWrapper",

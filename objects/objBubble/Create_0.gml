@@ -39,7 +39,7 @@ function split()
 		var yVelNew = lengthdir_y(moveDist, moveAngle+45);
 		xVel = lengthdir_x(moveDist, moveAngle-45);
 		yVel = lengthdir_y(moveDist, moveAngle-45);
-		var bubble = instance_create_depth(x,y,10,objBilliardsBubble);
+		var bubble = instance_create_depth(x,y,10,objBubble);
 		bubble.xVel = xVelNew;
 		bubble.yVel = yVelNew;
 		bubble.bubbleSize = bubbleSize;

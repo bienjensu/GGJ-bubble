@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Boss",
-    "path":"folders/Objects/enemies/Boss.yy",
+    "path":"folders/Objects/Enemies/Boss.yy",
   },
   "parentObjectId":{
     "name":"objEnemiesParent",

@@ -1,6 +1,6 @@
 if pushTimeR % pushTime == 0
 {
-	var target = instance_nearest(x,y,objBilliardsBubble)
+	var target = instance_nearest(x,y,objBubble)
 	if target != noone
 	{
 		xVel = lengthdir_x(moveSpeed, point_direction(x,y,target.x,target.y));
@@ -21,7 +21,7 @@ if onscreen
 {
 	event_inherited()
 }
-var target = instance_place(x,y,objBilliardsBubble)
+var target = instance_place(x,y,objBubble)
 if target != "noone"
 {
 	with(target)

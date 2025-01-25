@@ -2,7 +2,7 @@ event_inherited();
 
 if vulnerable && !grabbed
 {
-	grabbedBy = instance_place(x,y,objBilliardsBubble);
+	grabbedBy = instance_place(x,y,objBubble);
 	if grabbedBy != noone
 	{
 		grabbed = true;

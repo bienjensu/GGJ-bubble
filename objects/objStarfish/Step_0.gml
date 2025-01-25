@@ -22,7 +22,7 @@ if !grabbed
 				sprite_index = sprStarfishIdle;
 			}
 		}
-		var nearestBubble = instance_nearest(x,y,objBilliardsBubble)
+		var nearestBubble = instance_nearest(x,y,objBubble)
 		if point_distance(x,y,nearestBubble.x,nearestBubble.y) < targetRange
 		{
 			if rechargeTimer == 0
@@ -55,7 +55,7 @@ if !grabbed
 	}
 	if rechargeTimer == 0
 	{
-		var target = instance_place(x,y,objBilliardsBubble)
+		var target = instance_place(x,y,objBubble)
 		if target != noone
 		{
 			target.split()

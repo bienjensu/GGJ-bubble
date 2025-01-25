@@ -2,8 +2,8 @@
 
 event_inherited();
 
-if (instance_place(x, y, objBilliardsBubble)) {
-    var i = instance_place(x, y, objBilliardsBubble)
+if (instance_place(x, y, objBubble)) {
+    var i = instance_place(x, y, objBubble)
     if i != noone {
         if i.y > y {
             vulnerable = true

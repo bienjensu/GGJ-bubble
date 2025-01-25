@@ -33,7 +33,7 @@ if place_meeting(x+xVel, y+yVel, objCollider) {
 	xVel = -xVel * bounceDampening
 	yVel = -yVel * bounceDampening
 }
-var target = instance_place(x,y,objBilliardsBubble)
+var target = instance_place(x,y,objBubble)
 if target != "noone"
 {
 	with(target)

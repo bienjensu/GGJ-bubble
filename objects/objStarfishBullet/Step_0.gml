@@ -1,5 +1,5 @@
 
-var target = instance_place(x,y,objBilliardsBubble)
+var target = instance_place(x,y,objBubble)
 if target != noone
 {
 	target.split()

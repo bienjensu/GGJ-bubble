@@ -88,7 +88,7 @@ if curVel > maxVel {
 }
 yVel = lerp(yVel, -1.35, 0.1)
 
-_i = instance_place(x,y,objBilliardsBubble)
+_i = instance_place(x,y,objBubble)
 if _i != noone {
 	dx = x - _i.x
 	dy = y - _i.y

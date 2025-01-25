@@ -53,7 +53,8 @@ if grounded
         {
             
         }
-        
+        var nearestBubble = instance_nearest(x,y,objBubble);
+
     }
 }
 y+=yVel
