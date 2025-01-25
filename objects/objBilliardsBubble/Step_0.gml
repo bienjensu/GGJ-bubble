@@ -69,10 +69,12 @@ if !grabbed
 		yVel = -yVel * bounceDampening
 	}
 	
-	// Apply velocities!
-	x += xVel
-	y += yVel
+
 }
+
+// Apply velocities!
+x += xVel
+y += yVel
 
 // Slow down if above max velocity
 curVel = abs(yVel) + abs(xVel)
