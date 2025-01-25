@@ -52,25 +52,22 @@ else
 	}
 	invulnTimeR --
 }
-if !grabbed
-{
-	// Collide & reflect
-	if place_meeting(x+xVel, y+yVel, objCollider) {
-		step = 0.1
-		while(!place_meeting(x+step*xVel, y+step*yVel, objCollider)) {
-			x += step * xVel
-			y += step * yVel
-		}
-		while(place_meeting(x, y, objCollider)) {
-			x += step * -xVel
-			y += step * -yVel
-		}
-		xVel = -xVel * bounceDampening
-		yVel = -yVel * bounceDampening
-	}
-	
 
+// Collide & reflect
+if place_meeting(x+xVel, y+yVel, objCollider) {
+    step = 0.1
+    while(!place_meeting(x+step*xVel, y+step*yVel, objCollider)) {
+        x += step * xVel
+        y += step * yVel
+    }
+    while(place_meeting(x, y, objCollider)) {
+        x += step * -xVel
+        y += step * -yVel
+    }
+    xVel = -xVel * bounceDampening
+    yVel = -yVel * bounceDampening
 }
+
 
 // Apply velocities!
 x += xVel
