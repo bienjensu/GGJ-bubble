@@ -1,20 +1,12 @@
-if xVel < slowSpeed && moveTimer > pushFrame
-{
-	image_index = 0;
-}
-if moveTimer == pushFrame
-{
-	image_index = 1;
-}
-if moveTimer  == 0
-{
-	moveTimer = moveTimerMax;
-	xVel = xDirection * moveSpeed;
-	image_index = 2;
-}
-moveTimer --;
-x += xVel;
-xVel = lerp(xVel, 0, moveDecay);
-
-
-event_inherited();
+xVel = 0;
+yVel = 0;
+xDirection = choose(1,-1);
+image_xscale = -xDirection
+moveSpeed = 2;
+moveDecay = 0.04;
+moveTimer = 0;
+moveTimerMax = 100;
+pushFrame = 12;
+slowSpeed = 0.5;
+event_inherited()
+vulnerable = true;
