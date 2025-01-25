@@ -13,12 +13,13 @@ if grabbed
 {
 	var grabbedX = grabbedBy.x;
 	var grabbedY = grabbedBy.y;
-	if abs(grabbedX - x) < 1 && abs(grabbedY - y) < 1
+	if abs(grabbedX - x) < 4 && abs(grabbedY - y) < 4
 	{
 		instance_destroy()
 	}
-	x = lerp(x, grabbedX, suckSpeed)
-	y = lerp(y, grabbedY, suckSpeed)
-	image_xscale = min(1, (abs(grabbedX - x) + abs(grabbedY - y))*scaleMult)
-	image_yscale = min(1, (abs(grabbedX - x) + abs(grabbedY - y))*scaleMult)
+	suckTimer++
+	x = lerp(x, grabbedX, suckSpeed*suckTimer)
+	y = lerp(y, grabbedY, suckSpeed*suckTimer)
+	image_xscale = min(1, (abs(grabbedX - x) + abs(grabbedY - y) - 4)*scaleMult)
+	image_yscale = min(1, (abs(grabbedX - x) + abs(grabbedY - y) - 4)*scaleMult)
 }

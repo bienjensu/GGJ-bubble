@@ -1,7 +1,8 @@
 vulnerable = false;
 grabbedBy = noone;
-suckSpeed = .2;
+suckSpeed = .01;
 scaleMult = .1;
 grabbed = false;
+suckTimer = 0;
 event_inherited();
 
