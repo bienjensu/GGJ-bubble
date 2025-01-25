@@ -8,6 +8,7 @@
     {"name":"sprAmoebaBall","order":3,"path":"sprites/sprAmoebaBall/sprAmoebaBall.yy",},
     {"name":"sprAmoebaBody","order":1,"path":"sprites/sprAmoebaBody/sprAmoebaBody.yy",},
     {"name":"sprAmoebaEat","order":2,"path":"sprites/sprAmoebaEat/sprAmoebaEat.yy",},
+    {"name":"sprAmoebaEye","order":4,"path":"sprites/sprAmoebaEye/sprAmoebaEye.yy",},
     {"name":"sprLionfish","order":4,"path":"sprites/sprLionfish/sprLionfish.yy",},
     {"name":"sprUrchin","order":5,"path":"sprites/sprUrchin/sprUrchin.yy",},
   ],

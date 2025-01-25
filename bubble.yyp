@@ -78,6 +78,7 @@
     {"id":{"name":"sprAmoebaBall","path":"sprites/sprAmoebaBall/sprAmoebaBall.yy",},},
     {"id":{"name":"sprAmoebaBody","path":"sprites/sprAmoebaBody/sprAmoebaBody.yy",},},
     {"id":{"name":"sprAmoebaEat","path":"sprites/sprAmoebaEat/sprAmoebaEat.yy",},},
+    {"id":{"name":"sprAmoebaEye","path":"sprites/sprAmoebaEye/sprAmoebaEye.yy",},},
     {"id":{"name":"sprBelemFall","path":"sprites/sprBelemFall/sprBelemFall.yy",},},
     {"id":{"name":"sprBelemJump","path":"sprites/sprBelemJump/sprBelemJump.yy",},},
     {"id":{"name":"sprBelemLand","path":"sprites/sprBelemLand/sprBelemLand.yy",},},
