@@ -54,37 +54,24 @@ else
 }
 if !grabbed
 {
-	var onePx = sign(xVel)
-	var moved = 0
-	if place_meeting(x+xVel, y, objCollider)
-	{
-		while(!place_meeting(x+onePx, y, objCollider) && abs(moved+onePx) < abs(xVel))
-		{
-			x+=onePx
-			moved+=onePx
+	// Collide & reflect
+	if place_meeting(x+xVel, y+yVel, objCollider) {
+		step = 0.1
+		while(!place_meeting(x+step*xVel, y+step*yVel, objCollider)) {
+			x += step * xVel
+			y += step * yVel
 		}
-		xVel = -(xVel-moved)*bounceDampening;
-	}
-
-	x += xVel;
-	xVel += moved*bounceDampening;
-	xVel = clamp(xVel, -maxSpeed, maxSpeed);
-
-	onePx = sign(yVel)
-	moved = 0
-	if place_meeting(x, y+yVel, objCollider)
-	{
-		while(!place_meeting(x, y+onePx, objCollider) && abs(moved+onePx) < abs(yVel))
-		{
-			y+=onePx
-			moved+=onePx
+		while(place_meeting(x, y, objCollider)) {
+			x += step * -xVel
+			y += step * -yVel
 		}
-		yVel = -(yVel-moved)*bounceDampening;
+		xVel = -xVel * bounceDampening
+		yVel = -yVel * bounceDampening
 	}
-
-	y += yVel;
-	yVel += moved*bounceDampening;
-	yVel = clamp(yVel, -maxSpeed, maxSpeed);
+	
+	// Apply velocities!
+	x += xVel
+	y += yVel
 }
 
 // Slow down if above max velocity
