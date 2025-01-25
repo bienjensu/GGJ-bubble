@@ -38,6 +38,7 @@
     {"name":"sprBelemJump","order":16,"path":"sprites/sprBelemJump/sprBelemJump.yy",},
     {"name":"sprBelemLand","order":18,"path":"sprites/sprBelemLand/sprBelemLand.yy",},
     {"name":"sprBelemPeek","order":15,"path":"sprites/sprBelemPeek/sprBelemPeek.yy",},
+    {"name":"objZebrafish","order":5,"path":"objects/objZebrafish/objZebrafish.yy",},
     {"name":"sprBubble","order":1,"path":"sprites/sprBubble/sprBubble.yy",},
     {"name":"sprBubbleLarge","order":6,"path":"sprites/sprBubbleLarge/sprBubbleLarge.yy",},
     {"name":"sprBubbleMedium","order":5,"path":"sprites/sprBubbleMedium/sprBubbleMedium.yy",},
@@ -53,5 +54,6 @@
     {"name":"sprStarfishShoot","order":12,"path":"sprites/sprStarfishShoot/sprStarfishShoot.yy",},
     {"name":"sprStarfishVulnerable","order":13,"path":"sprites/sprStarfishVulnerable/sprStarfishVulnerable.yy",},
     {"name":"sprUrchin","order":9,"path":"sprites/sprUrchin/sprUrchin.yy",},
+    {"name":"sprZebrafish","order":10,"path":"sprites/sprZebrafish/sprZebrafish.yy",},
   ],
 }
