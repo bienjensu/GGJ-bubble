@@ -86,7 +86,7 @@ if curVel > maxVel {
 } else {
 	xVel = lerp(xVel, 0, 0.1)
 }
-yVel = lerp(yVel, -1.35, 0.1)
+yVel = lerp(yVel, -0.625, 0.1)
 
 _i = instance_place(x,y,objBubble)
 if _i != noone {
