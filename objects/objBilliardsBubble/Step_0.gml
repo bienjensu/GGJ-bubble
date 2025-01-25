@@ -86,4 +86,15 @@ if !grabbed
 	yVel += moved*bounceDampening;
 	yVel = clamp(yVel, -maxSpeed, maxSpeed);
 }
+
+// Slow down if above max velocity
+curVel = abs(yVel) + abs(xVel)
+if curVel > maxVel {
+	show_debug_message("REDUCING")
+	multiplier = maxVel/curVel
+	xVel = lerp(xVel, xVel * multiplier, 0.1)
+	yVel = lerp(yVel, yVel * multiplier, 0.1)
+}
+
 event_inherited()
+

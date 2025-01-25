@@ -5,6 +5,7 @@ pusherY = 0;
 speedRatio = .05;
 grabbed = false;
 maxSpeed = 100;
+maxVel = 1.0;
 maxDist = 32;
 originX = 0;
 originY = 0;
