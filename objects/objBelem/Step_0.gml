@@ -59,12 +59,14 @@ if grounded
         var nearestBubble = instance_nearest(x,y,objBubble);
         if abs(x - nearestBubble.x) < peekDistX && y - nearestBubble.y < peekDistY && y - nearestBubble.y >0
         {
-            if abs(x - nearestBubble.x) < jumpDist
+            minJumpTimer ++
+            if abs(x - nearestBubble.x) < jumpDist && minJumpTimer > minJumpTime
             {
                 image_index = 2;
                 jumpTimer = frameRate;
                 grounded = false;
                 yVel -= jumpSpeed;
+                minJumpTimer = 0;
             }
             else
             {
@@ -73,9 +75,21 @@ if grounded
         }
         else
         {
+            minJumpTimer = 0;
             image_index = 0;
         }
 
+    }
+}
+if (instance_place(x, y, objBubble)) {
+    var i = instance_place(x, y, objBubble)
+    if i != noone && !grounded{
+        if i.y > y {
+            vulnerable = true
+        } else {
+            vulnerable = false
+            i.split()
+        }
     }
 }
 y+=yVel

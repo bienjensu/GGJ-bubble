@@ -11,7 +11,7 @@ if vulnerable && !grabbed
 }
 if grabbed
 {
-	if instance_exists(grabbedBy)
+	if instance_exists(grabbedBy) && grabbedBy.invulnTimeR == 0
 	{
 		var grabbedX = grabbedBy.x;
 		var grabbedY = grabbedBy.y;
