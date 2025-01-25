@@ -22,8 +22,8 @@ if grabbed
 		suckTimer++
 		x = lerp(x, grabbedX, suckSpeed*suckTimer)
 		y = lerp(y, grabbedY, suckSpeed*suckTimer)
-		image_xscale = min(1, (abs(grabbedX - x) + abs(grabbedY - y) - 4)*scaleMult)
-		image_yscale = min(1, (abs(grabbedX - x) + abs(grabbedY - y) - 4)*scaleMult)
+		//image_xscale = min(1, (abs(grabbedX - x) + abs(grabbedY - y) - 4)*scaleMult)
+		//image_yscale = min(1, (abs(grabbedX - x) + abs(grabbedY - y) - 4)*scaleMult)
 	}
 	else
     {
