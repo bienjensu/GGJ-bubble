@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"objEnemiesParent",
+  "%Name":"objStarfishBullet",
   "eventList":[],
   "managed":true,
-  "name":"objEnemiesParent",
+  "name":"objStarfishBullet",
   "overriddenProperties":[],
   "parent":{
-    "name":"enemies",
-    "path":"folders/Objects/enemies.yy",
+    "name":"Regular",
+    "path":"folders/Objects/enemies/Regular.yy",
   },
-  "parentObjectId":{
-    "name":"objEdgeWrapper",
-    "path":"objects/objEdgeWrapper/objEdgeWrapper.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

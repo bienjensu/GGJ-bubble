@@ -1,17 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"objEnemiesParent",
-  "eventList":[],
+  "%Name":"objStarfish",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"objEnemiesParent",
+  "name":"objStarfish",
   "overriddenProperties":[],
   "parent":{
-    "name":"enemies",
-    "path":"folders/Objects/enemies.yy",
+    "name":"Regular",
+    "path":"folders/Objects/enemies/Regular.yy",
   },
   "parentObjectId":{
-    "name":"objEdgeWrapper",
-    "path":"objects/objEdgeWrapper/objEdgeWrapper.yy",
+    "name":"objEnemiesParent",
+    "path":"objects/objEnemiesParent/objEnemiesParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
