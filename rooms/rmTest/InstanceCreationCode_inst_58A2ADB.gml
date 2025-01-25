@@ -1,1 +1,0 @@
-enemies = [objGiantBubble, objStarfish]
