@@ -47,6 +47,7 @@
     {"id":{"name":"objEnemySpawner","path":"objects/objEnemySpawner/objEnemySpawner.yy",},},
     {"id":{"name":"objGiantBubble","path":"objects/objGiantBubble/objGiantBubble.yy",},},
     {"id":{"name":"objPlayerBubble","path":"objects/objPlayerBubble/objPlayerBubble.yy",},},
+    {"id":{"name":"objStageController","path":"objects/objStageController/objStageController.yy",},},
     {"id":{"name":"rmTest","path":"rooms/rmTest/rmTest.yy",},},
     {"id":{"name":"scrGeneral","path":"scripts/scrGeneral/scrGeneral.yy",},},
     {"id":{"name":"sprBubble","path":"sprites/sprBubble/sprBubble.yy",},},
