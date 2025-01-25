@@ -14,6 +14,28 @@ if mouse_check_button_released(mb_left) && grabbed
 	xVel = (originX - mouse_x)*speedRatio;
 	yVel = (originY - mouse_y)*speedRatio;
 }
+
+// if rmb and not dragged, apply push force
+if !grabbed and mouse_check_button(mb_right) {
+	xDiff = x - mouse_x
+	yDiff = x - mouse_y
+	
+	xNorm = xDiff/distance
+	yNorm = yDiff/distance
+	
+	// Calculate falloff
+	k = 0.0
+	if (distance < minPushDist) {
+		k = 1.0
+	} else if (minPushDist < distance and distance < maxPushDist) {
+		k = (distance - minPushDist) / maxPushDist
+	} else if (maxPushDist < distance) {
+		k = 0.0
+	}
+	
+	xVel += xNorm * pushForce * k
+	yVel += yNorm * pushForce * k
+}
 //code for when bubble is hit; set split to true to initialise the code (probably better to put into a function actually hmm) edit: just did that
 /*if split
 {

@@ -13,6 +13,9 @@ invulnTime = 100;
 flashTime = 5;
 bubbleSize = 3;
 bounceDampening = .5;
+minPushDist = 10;
+maxPushDist = 50;
+pushForce = 0.1;
 
 function split()
 {
