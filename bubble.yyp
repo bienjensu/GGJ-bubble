@@ -49,6 +49,7 @@
     {"id":{"name":"objEdgeWrapper","path":"objects/objEdgeWrapper/objEdgeWrapper.yy",},},
     {"id":{"name":"objEnemiesParent","path":"objects/objEnemiesParent/objEnemiesParent.yy",},},
     {"id":{"name":"objEnemySpawner","path":"objects/objEnemySpawner/objEnemySpawner.yy",},},
+    {"id":{"name":"objGameController","path":"objects/objGameController/objGameController.yy",},},
     {"id":{"name":"objGiantBubble","path":"objects/objGiantBubble/objGiantBubble.yy",},},
     {"id":{"name":"objPlayerBubble","path":"objects/objPlayerBubble/objPlayerBubble.yy",},},
     {"id":{"name":"objSpawnRegion","path":"objects/objSpawnRegion/objSpawnRegion.yy",},},

@@ -29,6 +29,7 @@
     {"name":"objColliderHurt","order":1,"path":"objects/objColliderHurt/objColliderHurt.yy",},
     {"name":"objEdgeWrapper","order":2,"path":"objects/objEdgeWrapper/objEdgeWrapper.yy",},
     {"name":"objEnemiesParent","order":2,"path":"objects/objEnemiesParent/objEnemiesParent.yy",},
+    {"name":"objGameController","order":3,"path":"objects/objGameController/objGameController.yy",},
     {"name":"objStageController","order":1,"path":"objects/objStageController/objStageController.yy",},
     {"name":"objStarfishBullet","order":1,"path":"objects/objStarfishBullet/objStarfishBullet.yy",},
     {"name":"sprBubble","order":1,"path":"sprites/sprBubble/sprBubble.yy",},
