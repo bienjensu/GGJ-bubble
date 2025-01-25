@@ -45,5 +45,6 @@
     {"name":"sprStarfishBullet","order":5,"path":"sprites/sprStarfishBullet/sprStarfishBullet.yy",},
     {"name":"sprStarfishRecharging","order":7,"path":"sprites/sprStarfishRecharging/sprStarfishRecharging.yy",},
     {"name":"sprStarfishShoot","order":6,"path":"sprites/sprStarfishShoot/sprStarfishShoot.yy",},
+    {"name":"sprUrchin","order":9,"path":"sprites/sprUrchin/sprUrchin.yy",},
   ],
 }

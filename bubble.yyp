@@ -72,6 +72,7 @@
     {"id":{"name":"sprStarfishBullet","path":"sprites/sprStarfishBullet/sprStarfishBullet.yy",},},
     {"id":{"name":"sprStarfishRecharging","path":"sprites/sprStarfishRecharging/sprStarfishRecharging.yy",},},
     {"id":{"name":"sprStarfishShoot","path":"sprites/sprStarfishShoot/sprStarfishShoot.yy",},},
+    {"id":{"name":"sprUrchin","path":"sprites/sprUrchin/sprUrchin.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
