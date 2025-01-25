@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprZebrafish",
-    "path":"sprites/sprZebrafish/sprZebrafish.yy",
+    "name":"sprLionfish",
+    "path":"sprites/sprLionfish/sprLionfish.yy",
   },
   "spriteMaskId":null,
   "visible":true,

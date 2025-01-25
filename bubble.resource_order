@@ -1,4 +1,6 @@
 {
   "FolderOrderSettings":[],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"sprLionfish","order":1,"path":"sprites/sprLionfish/sprLionfish.yy",},
+  ],
 }

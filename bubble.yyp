@@ -86,6 +86,7 @@
     {"id":{"name":"sprCollider","path":"sprites/sprCollider/sprCollider.yy",},},
     {"id":{"name":"sprColliderHurt","path":"sprites/sprColliderHurt/sprColliderHurt.yy",},},
     {"id":{"name":"sprGiantBubble","path":"sprites/sprGiantBubble/sprGiantBubble.yy",},},
+    {"id":{"name":"sprLionfish","path":"sprites/sprLionfish/sprLionfish.yy",},},
     {"id":{"name":"sprNautilus","path":"sprites/sprNautilus/sprNautilus.yy",},},
     {"id":{"name":"sprStarfish","path":"sprites/sprStarfish/sprStarfish.yy",},},
     {"id":{"name":"sprStarfishBullet","path":"sprites/sprStarfishBullet/sprStarfishBullet.yy",},},
