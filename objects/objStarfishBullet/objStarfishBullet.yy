@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sprStarfishBullet",
+    "path":"sprites/sprStarfishBullet/sprStarfishBullet.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

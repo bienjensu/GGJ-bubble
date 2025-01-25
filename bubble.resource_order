@@ -23,6 +23,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"objAnenome","order":2,"path":"objects/objAnenome/objAnenome.yy",},
     {"name":"objBilliardsBubble","order":1,"path":"objects/objBilliardsBubble/objBilliardsBubble.yy",},
     {"name":"objColliderHurt","order":1,"path":"objects/objColliderHurt/objColliderHurt.yy",},
     {"name":"objEdgeWrapper","order":2,"path":"objects/objEdgeWrapper/objEdgeWrapper.yy",},
@@ -35,5 +36,9 @@
     {"name":"sprBubbleSmall","order":4,"path":"sprites/sprBubbleSmall/sprBubbleSmall.yy",},
     {"name":"sprCollider","order":2,"path":"sprites/sprCollider/sprCollider.yy",},
     {"name":"sprColliderHurt","order":3,"path":"sprites/sprColliderHurt/sprColliderHurt.yy",},
+    {"name":"sprStarfish","order":4,"path":"sprites/sprStarfish/sprStarfish.yy",},
+    {"name":"sprStarfishBullet","order":5,"path":"sprites/sprStarfishBullet/sprStarfishBullet.yy",},
+    {"name":"sprStarfishRecharging","order":7,"path":"sprites/sprStarfishRecharging/sprStarfishRecharging.yy",},
+    {"name":"sprStarfishShoot","order":6,"path":"sprites/sprStarfishShoot/sprStarfishShoot.yy",},
   ],
 }
