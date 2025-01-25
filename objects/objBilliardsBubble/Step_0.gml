@@ -96,5 +96,15 @@ if curVel > maxVel {
 	yVel = lerp(yVel, yVel * multiplier, 0.1)
 }
 
+_i = instance_place(x,y,objBilliardsBubble)
+if _i != noone {
+	dx = x - _i.x
+	dy = y - _i.y
+	xVel += dx * 0.01
+	yVel += dy * 0.01
+	_i.xVel -= dx * 0.01
+	_i.yVel -= dy * 0.01
+}
+
 event_inherited()
 
