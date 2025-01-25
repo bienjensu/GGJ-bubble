@@ -26,5 +26,9 @@ if grabbed
 		image_yscale = min(1, (abs(grabbedX - x) + abs(grabbedY - y) - 4)*scaleMult)
 	}
 	else
-	grabbed = false;
+    {
+        image_xscale = 1;
+        image_yscale = 1;
+        grabbed = false;
+    }
 }
