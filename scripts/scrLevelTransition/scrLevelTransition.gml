@@ -1,4 +1,4 @@
-global.roomsOrder = [Room1, Room2, Room3, Room4]
+global.roomsOrder = [Room1, Room2, Room3, Room4, Room5, Room6, Room7, Room8, Room9, Room10]
 global.totalBubbles = [1,0,0]
 global.currentScore = 0;
 global.highScore = 0;
