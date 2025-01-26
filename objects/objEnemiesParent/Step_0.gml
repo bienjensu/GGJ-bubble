@@ -46,6 +46,7 @@ if grabbed
             }
             grabbedBy.faceframe = frames.CHOMP
             grabbedBy.chompTimer = 20
+            global.currentScore += ceil(value * (objGameController.bonus/bonusDemult))
 			instance_destroy()
 		}
 		suckTimer++
