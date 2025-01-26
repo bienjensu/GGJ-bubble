@@ -26,6 +26,7 @@ readyTextY = gameh/2;
 gameOver = false;
 function roomEnd()
 {
+    audio_stop_sound(Sndblowing)
     for (var i = 0 ; i < instance_number(objBubble) ; i++)
     {
         var bubble = instance_find(objBubble, i);
