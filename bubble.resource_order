@@ -1,4 +1,6 @@
 {
   "FolderOrderSettings":[],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"objPBubble2","order":1,"path":"objects/objPBubble2/objPBubble2.yy",},
+  ],
 }
