@@ -56,7 +56,7 @@ if !grabbed
                image_index = 0;
            }
        }
-       else
+       else if instance_exists(objBubble)
        {
            var nearestBubble = instance_nearest(x,y,objBubble);
            if abs(x - nearestBubble.x) < peekDistX && y - nearestBubble.y < peekDistY && y - nearestBubble.y >0

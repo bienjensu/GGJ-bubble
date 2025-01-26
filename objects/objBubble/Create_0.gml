@@ -14,9 +14,9 @@ invulnTime = 100;
 flashTime = 5;
 bubbleSize = 3;
 bounceDampening = .5;
-minPushDist = 20;
+minPushDist = 50;
 maxPushDist = 100;
-pushForce = 0.10;
+pushForce = 0.20;
 
 event_inherited()
 function split()

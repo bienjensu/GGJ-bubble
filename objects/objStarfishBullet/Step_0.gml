@@ -1,6 +1,6 @@
 
 var target = instance_place(x,y,objBubble)
-if target != noone
+if target != noone && killTimer < killTimeFlash 
 {
 	target.split()
 }
