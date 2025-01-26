@@ -16,8 +16,7 @@ bubbleSize = 3;
 bounceDampening = .5;
 minPushDist = 20;
 maxPushDist = 100;
-pushForce = 0.10;
-
+pushForce = 0.15;
 event_inherited()
 function split()
 {

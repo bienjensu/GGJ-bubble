@@ -60,13 +60,6 @@ if win
            }
            draw_sprite(drawSprite, 0, bubblesPos[i].x,bubblesPos[i].y);
        }
-<<<<<<< Updated upstream
-       draw_sprite(drawSprite, 0, bubblesPos[i].x,bubblesPos[i].y);
-   }
-}
-
-=======
     }
 }
->>>>>>> Stashed changes
 draw_set_color(c_white);
