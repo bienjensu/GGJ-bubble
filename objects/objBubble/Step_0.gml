@@ -64,7 +64,13 @@ else
 
 // Collide & reflect
 if place_meeting(x+xVel, y+yVel, objCollider) {
-    step = 0.1
+    var step = 0.1
+    var belowCollider = false
+    var ixVel
+    if (place_meeting(x, y+yVel, objCollider) and yVel < 0) {
+        belowCollider = true
+        ixVel = xVel
+    }
     while(!place_meeting(x+step*xVel, y+step*yVel, objCollider)) {
         x += step * xVel
         y += step * yVel
@@ -74,8 +80,18 @@ if place_meeting(x+xVel, y+yVel, objCollider) {
         y += step * -yVel
     }
     var b = bubble(x,y,0.3)
-    xVel = -xVel * bounceDampening
-    yVel = -yVel * bounceDampening
+    
+    if belowCollider {
+        if ixVel > 0 {
+            xVel += 1.2
+        } else {
+            xVel -= 1.2
+        }
+        yVel += bounceDampening * 1.5
+    } else { 
+        xVel = -xVel * bounceDampening
+        yVel = -yVel * bounceDampening
+    }
 }
 
 
