@@ -1,12 +1,5 @@
 {
-  "FolderOrderSettings":[
-    {"name":"Music","order":1,"path":"folders/Music.yy",},
-    {"name":"particles","order":1,"path":"folders/Objects/particles.yy",},
-    {"name":"bg","order":8,"path":"folders/Sprites/bg.yy",},
-    {"name":"enemies","order":5,"path":"folders/Sprites/enemies.yy",},
-    {"name":"pufferfish","order":1,"path":"folders/Sprites/enemies/pufferfish.yy",},
-    {"name":"player","order":6,"path":"folders/Sprites/player.yy",},
-  ],
+  "FolderOrderSettings":[],
   "ResourceOrderSettings":[
     {"name":"objCursor","order":1,"path":"objects/objCursor/objCursor.yy",},
     {"name":"objPufferFish","order":1,"path":"objects/objPufferFish/objPufferFish.yy",},
@@ -63,4 +56,11 @@
 }
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[],
+}
+    {"name":"objGrabbable","order":1,"path":"objects/objGrabbable/objGrabbable.yy",},
+    {"name":"sprCursor_blow","order":2,"path":"sprites/sprCursor_blow/sprCursor_blow.yy",},
+    {"name":"sprCursor_click_grab","order":3,"path":"sprites/sprCursor_click_grab/sprCursor_click_grab.yy",},
+    {"name":"sprCursor_click_nothing1","order":4,"path":"sprites/sprCursor_click_nothing1/sprCursor_click_nothing1.yy",},
+    {"name":"sprCursor_click_nothing2","order":1,"path":"sprites/sprCursor_click_nothing2/sprCursor_click_nothing2.yy",},
+  ],
 }

@@ -15,7 +15,7 @@ birdIdealY = 0;
 birdX = 0;
 birdY = 0;
 birdSpeed = 0.8;
-birdIndex = sprUrchin;
+birdIndex = sprCursor_click_nothing1;
 //maxDist = 0;
 event_inherited();
 

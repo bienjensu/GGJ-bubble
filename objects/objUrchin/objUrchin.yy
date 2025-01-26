@@ -13,8 +13,8 @@
     "path":"folders/Objects/Enemies/Regular.yy",
   },
   "parentObjectId":{
-    "name":"objEdgeWrapper",
-    "path":"objects/objEdgeWrapper/objEdgeWrapper.yy",
+    "name":"objGrabbable",
+    "path":"objects/objGrabbable/objGrabbable.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

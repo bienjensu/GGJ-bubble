@@ -41,6 +41,8 @@ if target != "noone"
 		split()
 	}
 }
+	xVel = lerp(xVel, 0, 0.1)
+    yVel = lerp(yVel, 0, 0.1)
 	// Apply velocities!
 x += xVel
 y += yVel
