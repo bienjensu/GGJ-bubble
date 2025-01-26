@@ -5,3 +5,5 @@ maxPushDist = 50;
 pushForce = 0.1;
 bounceDampening = 0.1;
 event_inherited()
+
+killable = false

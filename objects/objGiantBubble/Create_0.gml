@@ -27,4 +27,6 @@ speedFalloff = .01;
 onscreen = false;
 event_inherited();
 
+
+killable = false
 head_radius = 10
