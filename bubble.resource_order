@@ -12,5 +12,6 @@
     {"name":"sprCursor_click_nothing1","order":6,"path":"sprites/sprCursor_click_nothing1/sprCursor_click_nothing1.yy",},
     {"name":"sprCursor_click_nothing2","order":7,"path":"sprites/sprCursor_click_nothing2/sprCursor_click_nothing2.yy",},
     {"name":"sprCursor_outline","order":3,"path":"sprites/sprCursor_outline/sprCursor_outline.yy",},
+    {"name":"sprTitleFish","order":1,"path":"sprites/sprTitleFish/sprTitleFish.yy",},
   ],
 }

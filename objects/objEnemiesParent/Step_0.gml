@@ -14,6 +14,7 @@ if grabbed
 	if instance_exists(grabbedBy) && grabbedBy.invulnTimeR == 0
 	{
         if ft == 0 {
+            grabbedBy.faceframe = frames.MOUTH1
             if object_index == objKrill {
                 audio_play_sound(Sndscoot,0,0,0.3,0,random_range(0.8,1.2))
             } else {
@@ -21,9 +22,14 @@ if grabbed
             }
                 
         }
+        if ft == 5 {
+            grabbedBy.faceframe = frames.MOUTH2
+              
+        }
 		var grabbedX = grabbedBy.x;
 		var grabbedY = grabbedBy.y;
 		if ft > 20 && abs(grabbedX - x) < 4 && abs(grabbedY - y) < 4 || ft > 40
+            
 		{
             if object_index == objKrill {
                 audio_play_sound(Sndsqik,0,0,0,0,random_range(0.8,1.2))
@@ -38,7 +44,8 @@ if grabbed
                     var b = bubble(x,y,0.3)
                 }
             }
-            
+            grabbedBy.faceframe = frames.CHOMP
+            grabbedBy.chompTimer = 20
 			instance_destroy()
 		}
 		suckTimer++

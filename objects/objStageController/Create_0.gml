@@ -3,8 +3,10 @@ view_hport[0] = cameraw * 4;
 bubbles = [];
 bubblesPos = [];
 totalSize = 0;
+
 spawnX = room_width/2;
 spawnY = room_height -32;
+
 win = false;
 prePhase = true;
 allReset = false;
