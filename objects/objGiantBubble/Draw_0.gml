@@ -1,5 +1,5 @@
 
-var np = instance_nearest(hx,hy,objBubble)
+var np = target
 var hd = point_direction(hx,hy,np.x,np.y)
 var dir = point_direction(hx, hy, np.x, np.y)
 

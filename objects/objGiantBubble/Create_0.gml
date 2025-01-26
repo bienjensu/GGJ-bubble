@@ -20,6 +20,7 @@ t = 0
 t2 = 0
 dashDirection = 0
 dashing = false
+target = {x: x,y : y}
 
 moveSpeed = 1;
 dashSpeed = 2.8

@@ -1,4 +1,10 @@
-var target = instance_nearest(hx,hy,objBubble)
+
+if instance_exists(objBubble) {
+    target = instance_nearest(hx,hy,objBubble)
+} else {
+    target = {x:hx, y:hy}
+}
+
 var tdir = point_direction(hx,hy,target.x,target.y)
 if pushTimeR == 0
 {

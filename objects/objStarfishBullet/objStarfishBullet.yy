@@ -13,7 +13,10 @@
     "name":"Regular",
     "path":"folders/Objects/Enemies/Regular.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"objEdgeWrapper",
+    "path":"objects/objEdgeWrapper/objEdgeWrapper.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
