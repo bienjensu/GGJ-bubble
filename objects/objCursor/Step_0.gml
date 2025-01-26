@@ -22,7 +22,7 @@ if mouse_check_button_pressed(mb_left)
 }
 if mouse_check_button(mb_left)
 {
-    if grabbedBubble != noone
+    if instance_exists(grabbedBubble)
     {
         
         //x+= window_mouse_get_delta_x()*sensitivity
@@ -40,8 +40,12 @@ if mouse_check_button(mb_left)
         birdIdealX = grabbedBubble.x - powerX
         birdIdealY = grabbedBubble.y - powerY
     }
+    else
+    {
+        grabbedBubble = noone;
+    }
 }
-if mouse_check_button_released(mb_left) && grabbedBubble != noone
+if mouse_check_button_released(mb_left) && instance_exists(grabbedBubble) //!= noone
 {
     //window_mouse_set_locked(false)
     //display_mouse_set(x,y)
@@ -79,7 +83,7 @@ if grabbedBubble == noone
     birdIdealX = x
     birdIdealY = y
     event_inherited();
-    if abs(birdX - x) < 2 && abs(birdY - y) < 2
+    if abs(birdX - x) < 5 && abs(birdY - y) < 5
     {
         birdInst = true
     }
