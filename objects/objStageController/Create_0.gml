@@ -41,3 +41,6 @@ function roomEnd()
     //instance_destroy(objBubble);
     win = true;
 }
+
+// Spawn cursor
+instance_create_depth(spawnX, spawnY, -100, objCursor)
