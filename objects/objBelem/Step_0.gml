@@ -64,6 +64,7 @@ if !grabbed
            groundedTimer --
            if groundedTimer = 0
            {
+                audio_play_sound(Sndswush,0,0,0.5)
                 repeat 24 {
                     bubble(x,y+20)
                 }
@@ -84,6 +85,7 @@ if !grabbed
                         var b = bubble(x+shake(10),y+10)
                         b.yv = random(-0.5)
                     }
+                    audio_play_sound(Sndsludgy,0,0,0.5)
                    jumpTimer = frameRate;
                    grounded = false;
                    yVel -= jumpSpeed;
@@ -107,7 +109,7 @@ if !grabbed
     {   
         var i = instance_place(x, y, objBubble)
         if i != noone && !grounded && yVel > -0.2 {
-        if i.y > y+12 {
+        if i.y > y+4 {
             vulnerable = true
         } else {
             vulnerable = false

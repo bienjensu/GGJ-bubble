@@ -9,3 +9,5 @@ pufft = false;
 event_inherited()
 vulnerable = true;
 mtSpeed = 1
+
+hissSound = noone

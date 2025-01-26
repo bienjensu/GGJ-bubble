@@ -1,5 +1,10 @@
+var np
+if instance_exists(objBubble) {
+    np = instance_nearest(x,y,objBubble)
+} else {
+    np = self
+}
 
-var np = target
 var hd = point_direction(hx,hy,np.x,np.y)
 var dir = point_direction(hx, hy, np.x, np.y)
 

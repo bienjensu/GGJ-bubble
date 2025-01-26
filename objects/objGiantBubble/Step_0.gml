@@ -42,7 +42,7 @@ if dashT >= 0 {
 }
  if dashT == 0 {
     audio_play_sound(sndSligg ,0,0,0.4,0,0.5)
-    audio_play_sound(sndAmoebaCharge,0,0,0.5)
+    audio_play_sound(sndAmoebaCharge,0,0,0.3,0,0.8)
     dashing = true
     show_debug_message("dash time")
     cha = 0
