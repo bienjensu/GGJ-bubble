@@ -40,8 +40,10 @@ if gameOverEnd
 {
     var halign = draw_get_halign()
     draw_set_color(offWhite)
+    draw_set_halign(fa_center)
+    draw_text(scorefinalposX,scorefinalposX,"GAME OVER")
     draw_set_halign(fa_right)
-    draw_text(scorefinalposX,scorefinalposY, "SCORE: ")
+    draw_text(scorefinalposX,scorefinalposY+16+textLeading, "SCORE: ")
     draw_set_halign(fa_left)
-    draw_text(scorefinalposX,scorefinalposY,score_string)
+    draw_text(scorefinalposX,scorefinalposY+16+textLeading,score_string)
 }
