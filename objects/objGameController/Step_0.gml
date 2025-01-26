@@ -1,4 +1,7 @@
-
+if keyboard_check_pressed(vk_escape)
+{
+    window_mouse_set_locked(!window_mouse_get_locked())
+}
 
 if !scoreCountup
 {
