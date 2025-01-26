@@ -1,9 +1,9 @@
 {
   "FolderOrderSettings":[
     {"name":"particles","order":1,"path":"folders/Objects/particles.yy",},
+    {"name":"bg","order":8,"path":"folders/Sprites/bg.yy",},
     {"name":"enemies","order":5,"path":"folders/Sprites/enemies.yy",},
     {"name":"pufferfish","order":1,"path":"folders/Sprites/enemies/pufferfish.yy",},
-    {"name":"bg","order":8,"path":"folders/Sprites/bg.yy",},
     {"name":"player","order":6,"path":"folders/Sprites/player.yy",},
   ],
   "ResourceOrderSettings":[

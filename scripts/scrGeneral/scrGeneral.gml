@@ -25,6 +25,8 @@ draw_set_font(fntMono)
 #macro key keyboard_check
 #macro cam view_camera[0]
 
+#macro offWhite #dafffe 
+
 
 function Sleep(durration){	
 	var _freezeDur = durration
