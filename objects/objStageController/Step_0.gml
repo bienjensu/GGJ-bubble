@@ -100,6 +100,10 @@ if win
     }
     if allReset
     {
+        objGameController.scoreCountup = true;
+    }
+    if beginEnd
+    {
         endTimer ++
         if endTimer > endTimerMax
         {

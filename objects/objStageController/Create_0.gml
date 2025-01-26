@@ -14,6 +14,7 @@ endTimerMax = 25;
 fadeInTimerMax = 25;
 fadeInTimer = fadeInTimerMax;
 endSurf = -1;
+beginEnd = false;
 function roomEnd()
 {
     for (var i = 0 ; i < instance_number(objBubble) ; i++)

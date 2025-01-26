@@ -1,5 +1,9 @@
 if prePhase
 {
+    var zwrite = gpu_get_zwriteenable();
+    var ztest = gpu_get_ztestenable();
+    gpu_set_zwriteenable(true);
+    gpu_set_ztestenable(true);
     draw_set_alpha(fadeInTimer/fadeInTimerMax);
     draw_set_color(c_black);
     gpu_set_depth(-100);
@@ -23,6 +27,8 @@ if prePhase
                 draw_sprite(drawSprite, 0, spawnX, spawnY)
             }
         }
+    gpu_set_zwriteenable(zwrite)
+    gpu_set_ztestenable(ztest)
 }
 if win
 {
@@ -31,6 +37,7 @@ if win
 		if endSurf == -1
 		{
 			instance_deactivate_all(true);
+            instance_activate_object(objGameController);
 		}
 	   endSurf = surface_create(surface_get_width(application_surface), surface_get_width(application_surface));
 	   surface_set_target(endSurf);
@@ -85,4 +92,5 @@ if win
         }
     }
 }
+gpu_set_depth(0);
 draw_set_color(c_white);
