@@ -1,3 +1,5 @@
+view_wport[0] = cameraw * 4;
+view_hport[0] = cameraw * 4;
 bubbles = [];
 bubblesPos = [];
 totalSize = 0;
