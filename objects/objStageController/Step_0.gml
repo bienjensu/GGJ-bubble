@@ -34,6 +34,11 @@ if (keyboard_check(ord("0"))) {
     room_goto(Room10)
 }
  * */
+
+if (keyboard_check(vk_f8)) {
+    update_music()
+}
+
 if (keyboard_check(vk_enter))
 {
     roomEnd()

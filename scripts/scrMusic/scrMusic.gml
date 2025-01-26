@@ -14,9 +14,9 @@ function update_music() {
     for (var i = 0; i < instance_number(objBubble) - 1; i++) {
         cur_bubble = instance_find(objBubble, i)
         switch cur_bubble.bubbleSize {
-            case 1: large = true; break;
+            case 3: large = true; break;
             case 2: medium = true; break;
-            case 3: large = true ; break;
+            case 1: small = true ; break;
         }
         if large {
             audio_sound_gain(global.bgmAll, 1, 100)
