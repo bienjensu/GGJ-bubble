@@ -5,7 +5,7 @@ pusherY = 0;
 speedRatio = .09;
 grabbed = false;
 maxSpeed = 500;
-maxVel = 1.0;
+maxVel = 0.7;
 maxDist = 32;
 originX = 0;
 originY = 0;
@@ -17,10 +17,14 @@ bounceDampening = .5;
 minPushDist = 50;
 maxPushDist = 100;
 pushForce = 0.15;
-upForceMax = -0.625
+upForceMax = -0.325
 upForce = upForceMax;
-upForceDelayFrames = 40;
+upForceDelayFrames = 90;
 chompTimer = -1
+
+t=0
+gx = 1
+gy = 1
 
 enum frames {
     IDLE,
@@ -67,7 +71,9 @@ function split()
 		bubble.yVel = yVelNew;
 		bubble.bubbleSize = bubbleSize;
 		bubble.invulnTimeR = invulnTime;
-		
+        bubble.faceframe = frames.DIZZY
+        bubble.chompTimer = invulnTime
+         
 		switch bubble.bubbleSize {
 			case 3: bubble.sprite_index = sprBubbleLarge
 			break;

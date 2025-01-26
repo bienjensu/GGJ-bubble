@@ -35,5 +35,5 @@
     "path":"sprites/sprColliderHurt/sprColliderHurt.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
