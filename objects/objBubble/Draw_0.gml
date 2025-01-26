@@ -27,18 +27,9 @@ if chompTimer == 0 {
     faceframe = frames.IDLE
 }
 
-if t mod 20 == 0 {
-   gx = Wave2(0.9,1.1,3)
-    gy = Wave2(1.1,0.9,3) 
-}
 
 
-image_xscale = gx
-image_yscale = gy
 draw_sprite_wrapped(sprite_index,image_index,x,y,0)
-
-image_xscale = 1
-image_yscale = 1
 draw_sprite_wrapped(facespr,faceframe,x,y,0)
 
 image_xscale = gx

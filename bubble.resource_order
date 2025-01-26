@@ -3,6 +3,7 @@
   "ResourceOrderSettings":[
     {"name":"objPBubble2","order":1,"path":"objects/objPBubble2/objPBubble2.yy",},
     {"name":"objEnemiesRequired","order":1,"path":"objects/objEnemiesRequired/objEnemiesRequired.yy",},
+    {"name":"objTutorialBubble","order":1,"path":"objects/objTutorialBubble/objTutorialBubble.yy",},
     {"name":"sprBubbleFaceLarge","order":1,"path":"sprites/sprBubbleFaceLarge/sprBubbleFaceLarge.yy",},
     {"name":"sprBubbleFaceMedium","order":2,"path":"sprites/sprBubbleFaceMedium/sprBubbleFaceMedium.yy",},
     {"name":"sprBubbleFaceSmall","order":3,"path":"sprites/sprBubbleFaceSmall/sprBubbleFaceSmall.yy",},

@@ -34,15 +34,11 @@ if (keyboard_check(ord("0"))) {
     room_goto(Room10)
 }
  * */
-
-if (keyboard_check(vk_f8)) {
-    update_music()
-}
-
 if (keyboard_check(vk_enter))
 {
     roomEnd()
 }
+
 if prePhase
 {
     if fadeInTimer > 0
@@ -63,9 +59,8 @@ if prePhase
     }
     if spawnBubbles
     {
-        show_debug_message("{0} | {1} | {2}", global.totalBubbles[0], global.totalBubbles[1], global.totalBubbles[2])
         for (var i = 0; i < array_length(global.totalBubbles); i++)
-        {
+        { 
             for (var j = 0 ; j < global.totalBubbles[i]; j++)
             {
                 var newBubble = instance_create_depth(spawnX,spawnY,-10,objBubble);
@@ -84,6 +79,7 @@ if prePhase
         }
         prePhase = false
     }
+    
 }
 if win
 {

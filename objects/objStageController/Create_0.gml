@@ -48,3 +48,7 @@ function roomEnd()
 
 // Spawn cursor
 instance_create_depth(spawnX, spawnY, -100, objCursor)
+if tutorial
+{
+    prePhase = false;
+}
