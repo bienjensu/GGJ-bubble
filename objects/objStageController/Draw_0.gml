@@ -26,7 +26,8 @@ if prePhase
     draw_set_color(c_white)
     var halign = draw_get_halign()
     draw_set_halign(fa_center)
-    draw_text(readyTextX,readyTextY,"get ready")
+    draw_set_font(fntMono)
+    draw_text(readyTextX,readyTextY,"GET READY..!")
     draw_set_halign(halign)
     
 }

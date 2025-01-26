@@ -14,7 +14,7 @@ if keyboard_check_pressed(ord(3))
 {
     window_set_size(640*2,480*2)
 }
-if current_time - global.stage_timer > 30000 && !spawned
+if current_time - global.stage_timer > 30000 && !spawned && !objStageController.tutorial
 {
     spawned = true
     instance_create_depth(giantSpawnX, giantSpawnY, -90, objGiantBubble);

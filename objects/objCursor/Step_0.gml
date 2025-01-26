@@ -58,9 +58,15 @@ if mouse_check_button_released(mb_left) && instance_exists(grabbedBubble) //!= n
     powerX = 0;
     powerY = 0;
 }
-if mouse_check_button_pressed(mb_right) && grabbedBubble = noone
+if mouse_check_button(mb_right) && grabbedBubble = noone
 {
-    birdIndex = sprCursor_blow
+    if choose(true,true,false) {
+        var g = instance_create_depth(x,y,depth-2,objPBubble2)
+        g.xv = random_range(-2,2)
+        g.yv = random_range(-2,2)
+        g.decay = random_range(20,60)
+    }
+    
 }
 if mouse_check_button_released(mb_any)
 {

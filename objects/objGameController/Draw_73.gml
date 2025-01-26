@@ -7,6 +7,7 @@ if !scoreCountup && !gameOverEnd
     var minutes_format =  string_replace(string_format(minutes, 2, 0), " ", "0")
     var time_string = string_join("",minutes_format, ":", seconds_format)
     var halign = draw_get_halign()
+    draw_set_font(fntMono)
     draw_set_halign(fa_left)
     draw_set_color(offWhite)
     draw_text(timeposX, timeposY, "TIME")
@@ -46,4 +47,9 @@ if gameOverEnd
     draw_text(scorefinalposX,scorefinalposY+16+textLeading, "SCORE: ")
     draw_set_halign(fa_left)
     draw_text(scorefinalposX,scorefinalposY+16+textLeading,score_string)
+}
+
+ if room == Room4 && global.stage_timer < 10 {
+    draw_set_font(fntCourier)
+    draw_text(room_width/2,48,"Right-click to push\nbubbles and urchins.")
 }

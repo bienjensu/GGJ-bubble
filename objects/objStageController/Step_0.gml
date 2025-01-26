@@ -153,7 +153,7 @@ if gameOver
             objGameController.gameOverEnd = true;
             if mouse_check_button_pressed(mb_any)
             {
-                game_restart();
+                game_end()
             }
         }
     }
