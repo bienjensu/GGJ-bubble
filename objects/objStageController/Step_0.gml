@@ -1,4 +1,4 @@
-if (keyboard_check(ord("R"))) {
+/*if (keyboard_check(ord("R"))) {
 	room_restart()
 }
 
@@ -32,4 +32,60 @@ if (keyboard_check(ord("9"))) {
 }else 
 if (keyboard_check(ord("0"))) {
     room_goto(Room10)
+}
+ * */
+if (keyboard_check(vk_enter))
+{
+    roomEnd()
+}
+if win
+{
+    if fadeTimer == fadeTimerMax
+    {
+        allReset = true;
+        for (var i = 0; i < array_length(bubblesPos); i++)
+        {
+            if abs(bubblesPos[i].x - spawnX) < 1
+            {
+                bubblesPos[i].x = spawnX;
+            }
+            else
+            {
+                allReset = false;
+                bubblesPos[i].x = lerp(bubblesPos[i].x, spawnX, lerpSpeed);
+            }
+            if abs(bubblesPos[i].y - spawnY) < 1
+            {
+                bubblesPos[i].y = spawnY;
+            }
+            else
+            {
+                allReset = false;
+                bubblesPos[i].y = lerp(bubblesPos[i].y, spawnY, lerpSpeed);
+            }
+        }
+    }
+    else{
+        fadeTimer ++
+    }
+    if allReset
+    {
+        endTimer ++
+        if endTimer > endTimerMax
+        {
+            var isRoom = function(roomName)
+            {
+                return roomName = room
+            }
+            var nextRoom = global.roomsOrder[array_find_index(global.roomsOrder, isRoom)+1];
+            if nextRoom != -1
+            {
+                room_goto(nextRoom);
+            }
+            else
+            {
+                room_goto(global.roomsOrder[0]);
+            }
+        }
+    }
 }

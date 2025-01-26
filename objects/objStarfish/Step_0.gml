@@ -23,14 +23,17 @@ if !grabbed
 			}
 		}
 		var nearestBubble = instance_nearest(x,y,objBubble)
-		if point_distance(x,y,nearestBubble.x,nearestBubble.y) < targetRange
-		{
-			if rechargeTimer == 0
-			{
-				shootTimer = prefireTime;
-				sprite_index = sprStarfishPrefire;
-			}
-		}
+        if nearestBubble != noone
+        {
+      		if point_distance(x,y,nearestBubble.x,nearestBubble.y) < targetRange
+      		{
+      			if rechargeTimer == 0
+      			{
+      				shootTimer = prefireTime;
+      				sprite_index = sprStarfishPrefire;
+      			}
+      		}
+        }
 	}
 	if shootTimer > 0
 	{
