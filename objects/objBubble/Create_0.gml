@@ -22,13 +22,21 @@ function split()
 {
 	if invulnTimeR == 0
 	{
+        audio_play_sound(snd2click,0,0)
+        Sleep(20)
+        audio_play_sound(sndhurt,0,0,0.8,0,1)
 		grabbed = false;
 		invulnTimeR = invulnTime;
 		bubbleSize --;
 		//destroy bubble if it is too small
 		if bubbleSize == 0
 		{
-			instance_destroy();
+            
+            audio_stop_sound(sndhurt)
+            //audio_play_sound(snd,0,0,0.6)
+            audio_play_sound(sndhurt,0,0,0.8)
+            Sleep(30)
+            instance_destroy();
 			exit;
 		}
 		//calculate move distance and angle

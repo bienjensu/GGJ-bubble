@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"sndclick",
+  "%Name":"sndfartsqueak",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.211383,
-  "name":"sndclick",
+  "duration":0.428481,
+  "name":"sndfartsqueak",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"sndclick.ogg",
+  "soundFile":"sndfartsqueak.wav",
   "type":0,
   "volume":1.0,
 }

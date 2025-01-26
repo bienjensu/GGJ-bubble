@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"sndHiss",
+  "%Name":"sndwooby",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.957256,
-  "name":"sndHiss",
+  "duration":1.087029,
+  "name":"sndwooby",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"sndHiss.ogg",
+  "soundFile":"sndwooby.wav",
   "type":0,
-  "volume":0.6,
+  "volume":1.0,
 }

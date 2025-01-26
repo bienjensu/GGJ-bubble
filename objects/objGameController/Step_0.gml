@@ -31,9 +31,12 @@ else
     {
         global.currentScore += min(bonus,10)
         bonus -= min(bonus,10)
+        audio_stop_sound(Sndtally)
+        audio_play_sound(Sndtally,0,0,0.3,0.01)
         if bonus == 0
         {
             postScoreTimer = postScoreTimeMax;
+            audio_play_sound(Sndpowerup,0,0,0.4)
         }
     }
     if postScoreTimer > 0

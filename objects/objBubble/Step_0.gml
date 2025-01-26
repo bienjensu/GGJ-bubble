@@ -10,13 +10,18 @@ if mouse_check_button_pressed(mb_left) && distance < maxDist
 //if button released, add velocity
 if mouse_check_button_released(mb_left) && grabbed
 {
-	grabbed = false;
+	grabbed = false
 	xVel = (originX - mouse_x)*speedRatio;
 	yVel = (originY - mouse_y)*speedRatio;
+    audio_play_sound(sndBubble,0,0,0.3,0,clamp((max(abs(xVel),abs(yVel))*0.1)+0.5 ,0.8,1.1)* random_range(0.95,1.1))
 }
 
 // if rmb and not dragged, apply push force
 if !grabbed and mouse_check_button(mb_right) {
+    if !audio_is_playing(Sndblowing) {
+        audio_play_sound(Sndblowing,0,true,0.5,0,1)
+    }
+    
 	xDiff = x - mouse_x
 	yDiff = y - mouse_y
 	
@@ -35,6 +40,10 @@ if !grabbed and mouse_check_button(mb_right) {
 	
 	xVel += xNorm * pushForce * k
 	yVel += yNorm * pushForce * k
+}
+
+if mouse_check_button_released(mb_right) {
+    audio_stop_sound(Sndblowing)
 }
 if invulnTimeR == 0
 {
