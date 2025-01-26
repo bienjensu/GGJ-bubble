@@ -4,12 +4,15 @@ totalSize = 0;
 spawnX = room_width/2;
 spawnY = room_height -32;
 win = false;
+prePhase = true;
 allReset = false;
 lerpSpeed = 0.2;
 fadeTimer = 0;
 fadeTimerMax = 100;
 endTimer = 0;
 endTimerMax = 50;
+fadeInTimerMax = 50;
+fadeInTimer = fadeInTimerMax;
 function roomEnd()
 {
     for (var i = 0 ; i < instance_number(objBubble) ; i++)
@@ -25,7 +28,9 @@ function roomEnd()
             y : bubble.y,
             bubbleSize : bubble.bubbleSize
         }
-        instance_destroy(bubble)
+        //instance_destroy(bubble)
     }
+    global.totalBubbles = bubblesLeft(totalSize);
+    instance_destroy(objBubble);
     win = true;
 }
