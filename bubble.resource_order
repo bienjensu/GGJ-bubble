@@ -1,4 +1,18 @@
 {
-  "FolderOrderSettings":[],
-  "ResourceOrderSettings":[],
+  "FolderOrderSettings":[
+    {"name":"particles","order":1,"path":"folders/Objects/particles.yy",},
+    {"name":"enemies","order":5,"path":"folders/Sprites/enemies.yy",},
+    {"name":"pufferfish","order":1,"path":"folders/Sprites/enemies/pufferfish.yy",},
+    {"name":"player","order":6,"path":"folders/Sprites/player.yy",},
+  ],
+  "ResourceOrderSettings":[
+    {"name":"sprCollider","order":3,"path":"sprites/sprCollider/sprCollider.yy",},
+    {"name":"sprColliderHurt","order":2,"path":"sprites/sprColliderHurt/sprColliderHurt.yy",},
+    {"name":"sprEnemySpawner","order":4,"path":"sprites/sprEnemySpawner/sprEnemySpawner.yy",},
+    {"name":"sprParticleBubble","order":7,"path":"sprites/sprParticleBubble/sprParticleBubble.yy",},
+    {"name":"sprPufferBlowdown","order":2,"path":"sprites/sprPufferBlowdown/sprPufferBlowdown.yy",},
+    {"name":"sprPufferBlowup","order":1,"path":"sprites/sprPufferBlowup/sprPufferBlowup.yy",},
+    {"name":"sprPufferRealisticDepictionOfAPanicAttack","order":3,"path":"sprites/sprPufferRealisticDepictionOfAPanicAttack/sprPufferRealisticDepictionOfAPanicAttack.yy",},
+    {"name":"sprZebrafish","order":1,"path":"sprites/sprZebrafish/sprZebrafish.yy",},
+  ],
 }

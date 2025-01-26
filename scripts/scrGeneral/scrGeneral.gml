@@ -35,3 +35,37 @@ function Sleep(durration){
 function draw_self_ext(_s,_n,_x,_y){
 	draw_sprite_ext(_s,_n,_x,_y,image_xscale,image_yscale,image_angle,image_blend,image_alpha)
 }
+
+
+function draw_sprite_wrapped(_sprite_index,_image_index,_x,_y,rot=0) {
+    draw_sprite_ext(_sprite_index,_image_index,_x,_y,image_xscale,image_yscale,rot,image_blend,image_alpha)
+    draw_sprite_ext(_sprite_index,_image_index,_x,_y+room_height,image_xscale,image_yscale,rot,image_blend,image_alpha)
+    draw_sprite_ext(_sprite_index,_image_index,_x,_y-room_height,image_xscale,image_yscale,rot,image_blend,image_alpha)
+    draw_sprite_ext(_sprite_index,_image_index,_x+room_width,_y,image_xscale,image_yscale,rot,image_blend,image_alpha)
+    draw_sprite_ext(_sprite_index,_image_index,_x-room_width,_y,image_xscale,image_yscale,rot,image_blend,image_alpha)
+}
+
+function shake(i) {
+    return random_range(-i,i)
+}
+
+function Wave(_amp, _freq, _prog){
+	return _amp*sin(_prog/_freq);
+}
+function Wave2(from, to, duration){
+    a4 = (to - from) * 0.5;
+    return from + a4 + sin((((current_time * 0.001) +duration) / duration) * (pi*2)) * a4;
+}
+
+function bubble(_x = x, _y = y, chance = 1, decay = -1) {
+    if random_range(chance,1) > 1-chance {
+        var b = instance_create_depth(_x,_y,depth+1,objPBubble)
+        if decay != -1 {
+            b.decay = decay
+        }
+        return b
+    }
+    
+}
+
+

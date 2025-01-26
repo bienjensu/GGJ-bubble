@@ -64,6 +64,7 @@ if place_meeting(x+xVel, y+yVel, objCollider) {
         x += step * -xVel
         y += step * -yVel
     }
+    var b = bubble(x,y,0.3)
     xVel = -xVel * bounceDampening
     yVel = -yVel * bounceDampening
 }
@@ -76,7 +77,7 @@ y += yVel
 // Slow down if above max velocity
 curVel = abs(yVel) + abs(xVel)
 if curVel > maxVel {
-	show_debug_message("REDUCING")
+	//show_debug_message("REDUCING")
 	multiplier = maxVel/curVel
 	xVel = lerp(xVel, xVel * multiplier, 0.1)
 	yVel = lerp(yVel, yVel * multiplier, 0.1)
@@ -86,7 +87,7 @@ if curVel > maxVel {
 yVel = lerp(yVel, -0.625, 0.1)
 
 _i = instance_place(x,y,objBubble)
-if _i != noone {
+if _i != noone {  
 	dx = x - _i.x
 	dy = y - _i.y
 	xVel += dx * 0.01

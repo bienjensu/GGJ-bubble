@@ -17,6 +17,9 @@ if grabbed
 		var grabbedY = grabbedBy.y;
 		if abs(grabbedX - x) < 4 && abs(grabbedY - y) < 4 || ft > 20
 		{
+            repeat 6 {
+                var b = bubble(x,y,0.3)
+            }
 			instance_destroy()
 		}
 		suckTimer++
@@ -24,6 +27,8 @@ if grabbed
 		y = lerp(y, grabbedY, suckSpeed*suckTimer)
 		//image_xscale = min(1, (abs(grabbedX - x) + abs(grabbedY - y) - 4)*scaleMult)
 		//image_yscale = min(1, (abs(grabbedX - x) + abs(grabbedY - y) - 4)*scaleMult)
+        image_xscale = 0.75
+        image_yscale = 0.75
 	}
 	else
     {

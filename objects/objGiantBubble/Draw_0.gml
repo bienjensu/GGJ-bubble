@@ -31,19 +31,18 @@ ex = clamp(lerp(ex, lengthdir_x(2,hd),0.1),-2,2)
 ey = clamp(lerp(ey,lengthdir_y(2,hd),0.1),-2,2)
 
 
-
- 
-draw_sprite(sprAmoebaBall,0,hx,hy)
-
-draw_sprite(sprAmoebaEye,0,hx+ex,hy+ey)
-
-if point_distance(x,y,np.x,np.y) < 60 {
-    image_angle = dir
-    draw_sprite_ext(sprAmoebaEat,-1,x,y,1,1,dir,-1,1)
+if dashT > 0  {
+    //image_angle = dashDirection 
+    draw_sprite_wrapped(sprAmoebaEat,1,x,y,dashDirection)
 } else {
-    
-    draw_sprite(sprAmoebaBody,image_index,x,y)
+    draw_sprite_wrapped(sprAmoebaBody,image_index,x+shake(cha),y+shake(cha),0)
 }
+ 
+draw_sprite_wrapped(sprAmoebaBall,1,hx+shake(cha*2.5),hy+shake(cha*2.5))
+
+draw_sprite_wrapped(sprAmoebaEye,1,hx+ex+shake(0.2),hy+ey+shake(0.2))
+
+
 
 
 

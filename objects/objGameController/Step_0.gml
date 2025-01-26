@@ -6,3 +6,8 @@ time_string = string_join("", "Time: ", minutes_format, ":", seconds_format)
 
 score += 1
 score_string = string_join("", "Score: ", string_replace_all(string_format(score, 8, 0), " ", "0"))
+
+
+if random(50) < 1 {
+    instance_create_depth(random(room_width),random(room_height),depth-1,objPBubble)
+}
