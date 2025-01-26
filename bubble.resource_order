@@ -1,10 +1,10 @@
 {
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
+    {"name":"objEnemiesRequired","order":1,"path":"objects/objEnemiesRequired/objEnemiesRequired.yy",},
     {"name":"sprBubbleFaceLarge","order":1,"path":"sprites/sprBubbleFaceLarge/sprBubbleFaceLarge.yy",},
     {"name":"sprBubbleFaceMedium","order":2,"path":"sprites/sprBubbleFaceMedium/sprBubbleFaceMedium.yy",},
     {"name":"sprBubbleFaceSmall","order":3,"path":"sprites/sprBubbleFaceSmall/sprBubbleFaceSmall.yy",},
-    {"name":"objEnemiesRequired","order":1,"path":"objects/objEnemiesRequired/objEnemiesRequired.yy",},
     {"name":"sprBubbleLarge","order":1,"path":"sprites/sprBubbleLarge/sprBubbleLarge.yy",},
     {"name":"sprBubbleSmall","order":2,"path":"sprites/sprBubbleSmall/sprBubbleSmall.yy",},
     {"name":"sprCursor_blow","order":4,"path":"sprites/sprCursor_blow/sprCursor_blow.yy",},
@@ -12,6 +12,6 @@
     {"name":"sprCursor_click_nothing1","order":6,"path":"sprites/sprCursor_click_nothing1/sprCursor_click_nothing1.yy",},
     {"name":"sprCursor_click_nothing2","order":7,"path":"sprites/sprCursor_click_nothing2/sprCursor_click_nothing2.yy",},
     {"name":"sprCursor_outline","order":3,"path":"sprites/sprCursor_outline/sprCursor_outline.yy",},
-    {"name":"sprTileset","order":1,"path":"sprites/sprTileset/sprTileset.yy",},
+    {"name":"sprTitleFish","order":1,"path":"sprites/sprTitleFish/sprTitleFish.yy",},
   ],
 }

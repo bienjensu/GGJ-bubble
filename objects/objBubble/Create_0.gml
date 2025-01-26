@@ -13,13 +13,25 @@ invulnTimeR = 0;
 invulnTime = 100;
 flashTime = 5;
 bubbleSize = 3;
-bounceDampening = 1.5;
+bounceDampening = .5;
 minPushDist = 50;
 maxPushDist = 100;
 pushForce = 0.15;
 upForceMax = -0.625
 upForce = upForceMax;
 upForceDelayFrames = 40;
+chompTimer = -1
+
+enum frames {
+    IDLE,
+    DIZZY,
+    MOUTH1,
+    MOUTH2,
+    CHOMP
+}
+
+faceframe = frames.IDLE
+
 event_inherited()
 function split()
 {
