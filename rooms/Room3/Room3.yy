@@ -7,7 +7,6 @@
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_5464F5BB_1_1_1_1_1_1_1","path":"rooms/Room3/Room3.yy",},
-    {"name":"inst_2083CA69_1_1_1_1_1_1_1","path":"rooms/Room3/Room3.yy",},
     {"name":"inst_66DBA6C9","path":"rooms/Room3/Room3.yy",},
     {"name":"inst_19125EA1","path":"rooms/Room3/Room3.yy",},
     {"name":"inst_20023598","path":"rooms/Room3/Room3.yy",},
@@ -20,7 +19,6 @@
     {"name":"inst_26D7F178","path":"rooms/Room3/Room3.yy",},
     {"name":"inst_54494AFC","path":"rooms/Room3/Room3.yy",},
     {"name":"inst_44455964","path":"rooms/Room3/Room3.yy",},
-    {"name":"inst_3B658909","path":"rooms/Room3/Room3.yy",},
     {"name":"inst_5F5FCDAF","path":"rooms/Room3/Room3.yy",},
     {"name":"inst_4E2B9A3B","path":"rooms/Room3/Room3.yy",},
   ],
@@ -51,9 +49,7 @@
       ],"layers":[],"name":"Collision","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":300,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_5464F5BB_1_1_1_1_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5464F5BB_1_1_1_1_1_1_1","objectId":{"name":"objGameController","path":"objects/objGameController/objGameController.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-96.0,"y":-64.0,},
-        {"$GMRInstance":"v1","%Name":"inst_2083CA69_1_1_1_1_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2083CA69_1_1_1_1_1_1_1","objectId":{"name":"objStageController","path":"objects/objStageController/objStageController.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-96.0,"y":-64.0,},
         {"$GMRInstance":"v1","%Name":"inst_66DBA6C9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_66DBA6C9","objectId":{"name":"objNautilus","path":"objects/objNautilus/objNautilus.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":292.0,"y":40.0,},
-        {"$GMRInstance":"v1","%Name":"inst_3B658909","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3B658909","objectId":{"name":"objMusicManager","path":"objects/objMusicManager/objMusicManager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":-32.0,},
         {"$GMRInstance":"v1","%Name":"inst_5F5FCDAF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5F5FCDAF","objectId":{"name":"objStageController","path":"objects/objStageController/objStageController.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"objStageController","path":"objects/objStageController/objStageController.yy",},"propertyId":{"name":"tutorial","path":"objects/objStageController/objStageController.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"true",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":-32.0,},

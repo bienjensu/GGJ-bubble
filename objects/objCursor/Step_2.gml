@@ -15,8 +15,8 @@ if birdInst
 }
 else 
 {
-    //birdX = lerp(birdX, birdIdealX, birdSpeed)
-    //birdY = lerp(birdY, birdIdealY, birdSpeed)
-        birdX = x
-    birdY = y
+    birdX = lerp(birdX, birdIdealX, birdSpeed)
+    birdY = lerp(birdY, birdIdealY, birdSpeed)
+    //birdX = x
+    //birdY = y
 }
