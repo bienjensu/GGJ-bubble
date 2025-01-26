@@ -25,7 +25,7 @@
   ],
   "name":"sprBelemLand",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"belemnite",
     "path":"folders/Sprites/enemies/belemnite.yy",
@@ -84,7 +84,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":10,
-    "yorigin":17,
+    "yorigin":18,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

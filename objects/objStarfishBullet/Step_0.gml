@@ -7,6 +7,7 @@ if target != noone && killTimer < killTimeFlash
 
 x = lerp(x, maxDistX, 0.05);
 y = lerp(y, maxDistY, 0.05);
+bubble(x,y,0.1)
 killTimer ++
 if killTimer > killTimeMax
 {

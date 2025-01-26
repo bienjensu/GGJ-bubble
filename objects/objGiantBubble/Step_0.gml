@@ -17,11 +17,13 @@ if pushTimeR == 0
             dashDirection = tdir
             xVel = 0
             yVel = 0
+            audio_play_sound(sndAmoeba,0,0,0.4)
         } else {
             xVel = lengthdir_x(moveSpeed, tdir);
             yVel = lengthdir_y(moveSpeed, tdir);
             pushTimeR = pushTime;
             t2 ++;
+            audio_play_sound(sndSligg ,0,0,0.3,0,random_range(0.6,0.8))
         }
 		
 	}
@@ -39,6 +41,8 @@ if dashT >= 0 {
     pushTimeR--
 }
  if dashT == 0 {
+    audio_play_sound(sndSligg ,0,0,0.4,0,0.5)
+    audio_play_sound(sndAmoebaCharge,0,0,0.5)
     dashing = true
     show_debug_message("dash time")
     cha = 0
@@ -69,5 +73,10 @@ if target != "noone"
 		split()
 	}
 }
+
+if irandom(200) == 1 {
+    audio_play_sound(sndScream ,0,0,0.4,0,0.5)
+}
+
 
 t++

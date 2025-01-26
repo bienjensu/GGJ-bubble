@@ -22,6 +22,9 @@ if !grabbed
                 vulnerable = true;
                  puffTimer = frameRate;
                 sprite_index = sprPufferBlowdown   
+                repeat 24 {
+                    bubble(x+shake(10),y+shake(10),1)
+                }
             }
         }
     }
@@ -38,6 +41,9 @@ if !grabbed
             if pufft
             {
                 vulnerable = false;
+                repeat 6 {
+                    bubble(x+shake(10),y+shake(10))
+                }
                 sprite_index = sprPufferRealisticDepictionOfAPanicAttack
             }
             else
@@ -46,14 +52,24 @@ if !grabbed
             }
         }
     }
-    moveTimer ++;
+    moveTimer += mtSpeed;
+    
     if !vulnerable
     {
+        mtSpeed = 0.5 
         var target = instance_place(x,y,objBubble)
 		if target != noone
 		{
 			target.split()
 		}
+    } else {
+        mtSpeed = 1
+        var g = moveTimer * speedRatio
+        if g < 180 {
+            image_xscale = -1
+        } else { 
+            image_xscale = 1
+        }
     }
 }
 event_inherited()

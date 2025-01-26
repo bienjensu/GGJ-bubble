@@ -15,9 +15,10 @@ if grabbed
 	{
 		var grabbedX = grabbedBy.x;
 		var grabbedY = grabbedBy.y;
-		if abs(grabbedX - x) < 4 && abs(grabbedY - y) < 4 || ft > 20
+		if ft > 20 && abs(grabbedX - x) < 4 && abs(grabbedY - y) < 4 || ft > 40
 		{
-            repeat 6 {
+            audio_play_sound(sndwurr,0,0,0.6,0)
+            repeat 16 {
                 var b = bubble(x,y,0.3)
             }
 			instance_destroy()

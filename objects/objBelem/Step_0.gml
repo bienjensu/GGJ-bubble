@@ -10,14 +10,26 @@ if !grabbed
            if jumpTimer = 0
            {
                sprite_index = sprBelemJump
+            
            }
        }
        if !falling
        {
+        if choose(true,false) {
+            var bub = bubble(x,y+10,1,random(100))
+            bub.x = x
+            bub.yv = random(-1.5)
+        }
+        
+        
+        
          if yVel > 0
          {
            falling = true
            sprite_index = sprBelemFall
+            repeat 9 {
+                bubble(x+shake(10),y+10,1,random(100))
+            }
          }
        }
        if falling
@@ -52,6 +64,9 @@ if !grabbed
            groundedTimer --
            if groundedTimer = 0
            {
+                repeat 24 {
+                    bubble(x,y+20)
+                }
                sprite_index = sprBelemPeek
                image_index = 0;
            }
@@ -65,6 +80,10 @@ if !grabbed
                if abs(x - nearestBubble.x) < jumpDist && minJumpTimer > minJumpTime
                {
                    image_index = 2;
+                    repeat 24 {
+                        var b = bubble(x+shake(10),y+10)
+                        b.yv = random(-0.5)
+                    }
                    jumpTimer = frameRate;
                    grounded = false;
                    yVel -= jumpSpeed;
@@ -73,6 +92,7 @@ if !grabbed
                else
                {
                    image_index = 1
+                
                }
            }
            else
@@ -86,13 +106,15 @@ if !grabbed
     if (instance_place(x, y, objBubble)) 
     {   
         var i = instance_place(x, y, objBubble)
-        if i != noone && !grounded{
-        if i.y > y {
+        if i != noone && !grounded && yVel > -0.2 {
+        if i.y > y+12 {
             vulnerable = true
         } else {
             vulnerable = false
             i.split()
         }
+        } else {
+            i.split()
         }
     }
 }

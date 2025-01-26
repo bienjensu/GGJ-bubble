@@ -14,6 +14,7 @@ if !grabbed
 
 			if rechargeTimer == flashTime
 			{
+                audio_play_sound(Sndflit,0,0,0.6)
 				sprite_index = sprStarfishRecharging
 			}
 			if rechargeTimer == 0
@@ -30,7 +31,11 @@ if !grabbed
       			if rechargeTimer == 0
       			{
       				shootTimer = prefireTime;
+                    audio_play_sound(Sndstarfish_Explo,0,0,0.6)
       				sprite_index = sprStarfishPrefire;
+                    repeat 6 {
+                    bubble(x+shake(20),y+shake(10),1)
+                    }
       			}
       		}
         }
@@ -41,6 +46,11 @@ if !grabbed
 		if shootTimer == 0
 		{
 			sprite_index = sprStarfishShoot;
+            audio_play_sound(Sndstarfish,0,0,0.6)
+            repeat 32 {
+                var b = bubble(x+shake(20),y+shake(10),1)
+                b.yv = random_range(-1,1)
+            }
 			for(i = 0; i < shotsNum; i++)
 			{
 			var bulletAngle = i*(360/shotsNum) + 90;
