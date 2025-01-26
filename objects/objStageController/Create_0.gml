@@ -23,6 +23,7 @@ beginEnd = false;
 spawnBubbles = false;
 readyTextX = gamew/2;
 readyTextY = gameh/2;
+gameOver = false;
 function roomEnd()
 {
     for (var i = 0 ; i < instance_number(objBubble) ; i++)
