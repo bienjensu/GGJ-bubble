@@ -16,3 +16,6 @@ timeposY = 16;
 scorefinalposX = gamew/2
 scorefinalposY = gameh/2
 textLeading = 10;
+
+// Init stage timer on controller spawn
+global.stage_timer = current_time
