@@ -39,7 +39,6 @@ if grabbed
                 }
             }
             
-            
 			instance_destroy()
 		}
 		suckTimer++

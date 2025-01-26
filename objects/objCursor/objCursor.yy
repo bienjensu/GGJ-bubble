@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprBubble",
-    "path":"sprites/sprBubble/sprBubble.yy",
+    "name":"sprCursor_outline",
+    "path":"sprites/sprCursor_outline/sprCursor_outline.yy",
   },
   "spriteMaskId":null,
   "visible":true,

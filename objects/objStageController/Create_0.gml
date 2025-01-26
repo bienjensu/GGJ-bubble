@@ -43,4 +43,4 @@ function roomEnd()
 }
 
 // Spawn cursor
-instance_create_depth(0, 0, -100, objCursor)
+instance_create_depth(spawnX, spawnY, -100, objCursor)
