@@ -11,6 +11,7 @@
     {"name":"snd2click","order":10,"path":"sounds/snd2click/snd2click.yy",},
     {"name":"sndAmoeba","order":22,"path":"sounds/sndAmoeba/sndAmoeba.yy",},
     {"name":"sndAmoebaCharge","order":9,"path":"sounds/sndAmoebaCharge/sndAmoebaCharge.yy",},
+    {"name":"sndbad_news","order":34,"path":"sounds/sndbad_news/sndbad_news.yy",},
     {"name":"Sndblowing","order":8,"path":"sounds/Sndblowing/Sndblowing.yy",},
     {"name":"sndboom","order":7,"path":"sounds/sndboom/sndboom.yy",},
     {"name":"sndbounce","order":6,"path":"sounds/sndbounce/sndbounce.yy",},

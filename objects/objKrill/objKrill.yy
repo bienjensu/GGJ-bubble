@@ -39,6 +39,9 @@
     "name":"sprKrill1",
     "path":"sprites/sprKrill1/sprKrill1.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"sprKrill1",
+    "path":"sprites/sprKrill1/sprKrill1.yy",
+  },
   "visible":true,
 }

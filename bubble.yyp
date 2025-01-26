@@ -90,6 +90,7 @@
     {"id":{"name":"snd2click","path":"sounds/snd2click/snd2click.yy",},},
     {"id":{"name":"sndAmoeba","path":"sounds/sndAmoeba/sndAmoeba.yy",},},
     {"id":{"name":"sndAmoebaCharge","path":"sounds/sndAmoebaCharge/sndAmoebaCharge.yy",},},
+    {"id":{"name":"sndbad_news","path":"sounds/sndbad_news/sndbad_news.yy",},},
     {"id":{"name":"Sndblowing","path":"sounds/Sndblowing/Sndblowing.yy",},},
     {"id":{"name":"sndboom","path":"sounds/sndboom/sndboom.yy",},},
     {"id":{"name":"sndbounce","path":"sounds/sndbounce/sndbounce.yy",},},
