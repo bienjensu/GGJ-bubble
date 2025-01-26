@@ -13,8 +13,13 @@ endTimer = 0;
 endTimerMax = 25;
 fadeInTimerMax = 25;
 fadeInTimer = fadeInTimerMax;
+postFadeTimer = 0;
+postFadeTimerMax = 40;
 endSurf = -1;
 beginEnd = false;
+spawnBubbles = false;
+readyTextX = gamew/2;
+readyTextY = gameh/2;
 function roomEnd()
 {
     for (var i = 0 ; i < instance_number(objBubble) ; i++)

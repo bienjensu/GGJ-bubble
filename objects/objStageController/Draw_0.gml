@@ -1,9 +1,5 @@
 if prePhase
 {
-    var zwrite = gpu_get_zwriteenable();
-    var ztest = gpu_get_ztestenable();
-    gpu_set_zwriteenable(true);
-    gpu_set_ztestenable(true);
     draw_set_alpha(fadeInTimer/fadeInTimerMax);
     draw_set_color(c_black);
     gpu_set_depth(-100);
@@ -27,8 +23,12 @@ if prePhase
                 draw_sprite(drawSprite, 0, spawnX, spawnY)
             }
         }
-    gpu_set_zwriteenable(zwrite)
-    gpu_set_ztestenable(ztest)
+    draw_set_color(c_white)
+    var halign = draw_get_halign()
+    draw_set_halign(fa_center)
+    draw_text(readyTextX,readyTextY,"get ready")
+    draw_set_halign(halign)
+    
 }
 if win
 {
