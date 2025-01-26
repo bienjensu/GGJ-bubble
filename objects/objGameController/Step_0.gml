@@ -2,6 +2,18 @@ if keyboard_check_pressed(vk_escape)
 {
     window_mouse_set_locked(!window_mouse_get_locked())
 }
+if keyboard_check_pressed(ord(1))
+{
+    window_set_size(640/2,480/2)
+}
+if keyboard_check_pressed(ord(2))
+{
+    window_set_size(640,480)
+}
+if keyboard_check_pressed(ord(3))
+{
+    window_set_size(640*2,480*2)
+}
 if current_time - global.stage_timer > 30000 && !spawned
 {
     spawned = true
