@@ -59,6 +59,7 @@
     {"id":{"name":"objBubble","path":"objects/objBubble/objBubble.yy",},},
     {"id":{"name":"objCollider","path":"objects/objCollider/objCollider.yy",},},
     {"id":{"name":"objColliderHurt","path":"objects/objColliderHurt/objColliderHurt.yy",},},
+    {"id":{"name":"objCursor","path":"objects/objCursor/objCursor.yy",},},
     {"id":{"name":"objEdgeWrapper","path":"objects/objEdgeWrapper/objEdgeWrapper.yy",},},
     {"id":{"name":"objEnemiesParent","path":"objects/objEnemiesParent/objEnemiesParent.yy",},},
     {"id":{"name":"objEnemySpawner","path":"objects/objEnemySpawner/objEnemySpawner.yy",},},

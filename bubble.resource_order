@@ -7,6 +7,7 @@
     {"name":"player","order":6,"path":"folders/Sprites/player.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"objCursor","order":1,"path":"objects/objCursor/objCursor.yy",},
     {"name":"objPufferFish","order":1,"path":"objects/objPufferFish/objPufferFish.yy",},
     {"name":"snd2click","order":10,"path":"sounds/snd2click/snd2click.yy",},
     {"name":"sndAmoeba","order":22,"path":"sounds/sndAmoeba/sndAmoeba.yy",},
