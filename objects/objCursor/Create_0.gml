@@ -16,6 +16,7 @@ birdX = 0;
 birdY = 0;
 birdSpeed = 0.8;
 birdIndex = sprCursor_click_nothing1;
+image_alpha = 0;
 //maxDist = 0;
 event_inherited();
 

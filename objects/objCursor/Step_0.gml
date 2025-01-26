@@ -7,6 +7,7 @@ if mouse_check_button_pressed(mb_left)
         maxDist = sprite_get_width(nearestBubble.sprite_index) + hitboxBuffer;
        if point_distance(x,y,nearestBubble.x,nearestBubble.y) < maxDist
        {
+            image_alpha = 1;
             birdIndex = sprCursor_click_grab
             //window_mouse_set_locked(true)
             grabbedBubble = nearestBubble;
@@ -43,6 +44,7 @@ if mouse_check_button_released(mb_left) && grabbedBubble != noone
 {
     //window_mouse_set_locked(false)
     //display_mouse_set(x,y)
+    image_alpha = 0;
     grabbedBubble.xVel += min(powerX*pushMult, maxPower)
     grabbedBubble.yVel += min(powerY*pushMult*multY, maxPower)
     grabbedBubble.grabbed = false;
