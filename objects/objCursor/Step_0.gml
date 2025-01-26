@@ -7,6 +7,7 @@ if mouse_check_button_pressed(mb_left)
         maxDist = sprite_get_width(nearestBubble.sprite_index) + hitboxBuffer;
        if point_distance(x,y,nearestBubble.x,nearestBubble.y) < maxDist
        {
+            birdInst = false;
             image_alpha = 1;
             birdIndex = sprCursor_click_grab
             //window_mouse_set_locked(true)
@@ -61,8 +62,16 @@ if mouse_check_button_released(mb_any)
 {
     birdIndex = sprCursor_click_nothing1
 }
-x+= window_mouse_get_delta_x()*sensitivity
-y+= window_mouse_get_delta_y()*sensitivity
+/*if window_mouse_get_locked()
+{
+    x+= window_mouse_get_delta_x()*sensitivity
+    y+= window_mouse_get_delta_y()*sensitivity
+}
+else
+{
+    x = mouse_x
+    y = mouse_y
+}*/
 if grabbedBubble == noone
 {
     //x = mouse_x
@@ -70,7 +79,12 @@ if grabbedBubble == noone
     birdIdealX = x
     birdIdealY = y
     event_inherited();
+    if abs(birdX - x) < 2 && abs(birdY - y) < 2
+    {
+        birdInst = true
+    }
+
 }
-birdX = lerp(birdX, birdIdealX, birdSpeed)
-birdY = lerp(birdY, birdIdealY, birdSpeed)
+
+
 
