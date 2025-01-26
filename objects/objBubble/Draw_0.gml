@@ -41,8 +41,8 @@ image_xscale = 1
 image_yscale = 1
 draw_sprite_wrapped(facespr,faceframe,x,y,0)
 
-//draw_sprite_
-
+image_xscale = gx
+image_yscale = gy
 
 /*if mouse_check_button(mb_left) && grabbed
 {

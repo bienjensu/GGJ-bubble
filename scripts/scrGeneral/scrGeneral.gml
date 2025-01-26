@@ -1,6 +1,7 @@
 randomize()
 
 surface_resize(application_surface, 320, 240);
+window_set_size(640*2,480*2)
 
 
 #macro window_width window_get_width()
