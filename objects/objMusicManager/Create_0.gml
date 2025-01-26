@@ -17,7 +17,12 @@ function toggle_bass() {
 }
 
 function toggle_all() {
-    
+    if global.allPlaying {
+        audio_sound_gain(global.bgmAll, 0, 100)   
+    } else {
+        audio_sound_gain(global.bgmAll, 1, 100)
+    }
+    global.allPlaying = !global.allPlaying
 }
 
 function restart_all() {
