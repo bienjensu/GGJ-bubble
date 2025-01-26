@@ -21,6 +21,8 @@ upForceMax = -0.625
 upForce = upForceMax;
 upForceDelayFrames = 40;
 chompTimer = -1
+gx = 1
+gy = 1
 
 enum frames {
     IDLE,
