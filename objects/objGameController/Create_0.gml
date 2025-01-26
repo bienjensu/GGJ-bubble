@@ -19,6 +19,7 @@ textLeading = 10;
 giantSpawnX = gamew/2;
 giantSpawnY = -64;
 spawned = false;
+gameOverEnd = false;
 
 // Init stage timer on controller spawn
 global.stage_timer = current_time

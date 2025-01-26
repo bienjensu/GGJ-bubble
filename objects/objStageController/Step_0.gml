@@ -136,3 +136,25 @@ if win
         }
     }
 }
+if gameOver
+{
+    if fadeTimer == fadeTimerMax
+    {
+        beginEnd = true
+    }
+    else {
+    fadeTimer ++
+    }
+    if beginEnd
+    {
+        endTimer ++
+        if endTimer > endTimerMax
+        {
+            objGameController.gameOverEnd = true;
+            if mouse_check_button_pressed(mb_any)
+            {
+                game_restart();
+            }
+        }
+    }
+}

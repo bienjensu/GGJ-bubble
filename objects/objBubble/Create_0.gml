@@ -54,6 +54,10 @@ function split()
             audio_play_sound(sndhurt,0,0,0.8)
             Sleep(30)
             instance_destroy();
+            if instance_number(objBubble) == 0
+            {
+                objStageController.gameOver = true;
+            }
 			exit;
 		}
 		//calculate move distance and angle

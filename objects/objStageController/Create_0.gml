@@ -23,6 +23,7 @@ beginEnd = false;
 spawnBubbles = false;
 readyTextX = gamew/2;
 readyTextY = gameh/2;
+gameOver = false;
 function roomEnd()
 {
     audio_stop_sound(Sndblowing)
