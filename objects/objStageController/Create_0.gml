@@ -32,8 +32,9 @@ function roomEnd()
         totalSize += bubble.bubbleSize;
         if bubble.bubbleSize = 3
         {
-            totalSize++;
+            totalSize++
         }
+        
         bubblesPos[i] = {
             x : bubble.x,
             y : bubble.y,

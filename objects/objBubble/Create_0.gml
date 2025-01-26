@@ -90,5 +90,7 @@ function split()
 			case 1: sprite_index = sprBubbleSmall
 			break;
 		}
+        
+        update_music()
 	}
 }
