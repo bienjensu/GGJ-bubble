@@ -6,6 +6,7 @@
     {"name":"player","order":6,"path":"folders/Sprites/player.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"objPufferFish","order":1,"path":"objects/objPufferFish/objPufferFish.yy",},
     {"name":"sprCollider","order":3,"path":"sprites/sprCollider/sprCollider.yy",},
     {"name":"sprColliderHurt","order":2,"path":"sprites/sprColliderHurt/sprColliderHurt.yy",},
     {"name":"sprEnemySpawner","order":4,"path":"sprites/sprEnemySpawner/sprEnemySpawner.yy",},
