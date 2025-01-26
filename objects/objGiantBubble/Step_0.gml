@@ -57,7 +57,7 @@ xVel = lerp(xVel, 0, speedFalloff);
 yVel = lerp(yVel, 0, speedFalloff);
 hx+=xVel;
 hy+=yVel;
-if hy > 0
+if hy > sprite_height
 {
 	onscreen = true;
 }

@@ -2,6 +2,11 @@ if keyboard_check_pressed(vk_escape)
 {
     window_mouse_set_locked(!window_mouse_get_locked())
 }
+if current_time - global.stage_timer > 30000 && !spawned
+{
+    spawned = true
+    instance_create_depth(giantSpawnX, giantSpawnY, -90, objGiantBubble);
+}
 
 if !scoreCountup
 {
@@ -52,6 +57,5 @@ else
         }
     }
 }
-
 
 
