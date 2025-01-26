@@ -17,6 +17,9 @@ bounceDampening = .5;
 minPushDist = 50;
 maxPushDist = 100;
 pushForce = 0.15;
+upForceMax = -0.625
+upForce = upForceMax;
+upForceDelayFrames = 40;
 event_inherited()
 function split()
 {

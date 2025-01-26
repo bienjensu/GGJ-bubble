@@ -31,8 +31,9 @@ if mouse_check_button(mb_left) && grabbedBubble != noone
 if mouse_check_button_released(mb_left) && grabbedBubble != noone
 {
     grabbedBubble.xVel += min(powerX*pushMult, maxPower)
-    grabbedBubble.yVel += min(powerY*pushMult, maxPower)
+    grabbedBubble.yVel += min(powerY*pushMult*multY, maxPower)
     grabbedBubble.grabbed = false;
+    grabbedBubble.upForce = 0;
     grabbedBubble = noone;
     powerX = 0;
     powerY = 0;

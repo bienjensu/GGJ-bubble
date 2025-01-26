@@ -1,7 +1,7 @@
 var distance = point_distance(x, y, mouse_x, mouse_y);
 
 //set initial mouse position on clicik and set grabbed status
-if mouse_check_button_pressed(mb_left) && distance < maxDist
+/*if mouse_check_button_pressed(mb_left) && distance < maxDist
 {
 	originX = mouse_x;
 	originY = mouse_y;
@@ -14,7 +14,7 @@ if mouse_check_button_released(mb_left) && grabbed
 	xVel = (originX - mouse_x)*speedRatio;
 	yVel = (originY - mouse_y)*speedRatio;
     audio_play_sound(sndBubble,0,0,0.3,0,clamp((max(abs(xVel),abs(yVel))*0.1)+0.5 ,0.8,1.1)* random_range(0.95,1.1))
-}
+}*/
 
 // if rmb and not dragged, apply push force
 if !grabbed and mouse_check_button(mb_right) {
@@ -93,7 +93,12 @@ if curVel > maxVel {
 } else {
 	xVel = lerp(xVel, 0, 0.1)
 }
-yVel = lerp(yVel, -0.625, 0.1)
+if upForce > upForceMax
+{
+    upForce += upForceMax/upForceDelayFrames
+}
+    
+yVel = lerp(yVel, upForce, 0.1)
 
 _i = instance_place(x,y,objBubble)
 if _i != noone {  
