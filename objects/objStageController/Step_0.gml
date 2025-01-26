@@ -40,7 +40,23 @@ if (keyboard_check(vk_enter))
 }
 if prePhase
 {
-    if fadeInTimer == 0
+    if fadeInTimer > 0
+    {
+        fadeInTimer --
+        if fadeInTimer == 0
+        {
+            postFadeTimer = postFadeTimerMax
+        }
+    }
+    if postFadeTimer >0
+    {
+        postFadeTimer --
+        if postFadeTimer == 0
+        {
+            spawnBubbles = true;
+        }
+    }
+    if spawnBubbles
     {
         show_debug_message("{0} | {1} | {2}", global.totalBubbles[0], global.totalBubbles[1], global.totalBubbles[2])
         for (var i = 0; i < array_length(global.totalBubbles); i++)
@@ -62,10 +78,6 @@ if prePhase
             }
         }
         prePhase = false
-    }
-    else
-    {
-        fadeInTimer --
     }
 }
 if win
