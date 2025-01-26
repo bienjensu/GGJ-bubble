@@ -15,7 +15,7 @@ if grabbed
 	{
 		var grabbedX = grabbedBy.x;
 		var grabbedY = grabbedBy.y;
-		if abs(grabbedX - x) < 4 && abs(grabbedY - y) < 4
+		if abs(grabbedX - x) < 4 && abs(grabbedY - y) < 4 || ft > 20
 		{
 			instance_destroy()
 		}
@@ -31,4 +31,5 @@ if grabbed
         image_yscale = 1;
         grabbed = false;
     }
+    ft++
 }

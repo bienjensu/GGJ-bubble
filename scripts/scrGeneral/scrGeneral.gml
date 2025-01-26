@@ -31,3 +31,7 @@ function Sleep(durration){
 	var _t = current_time + _freezeDur
 	while (current_time < _t) { }
 }
+
+function draw_self_ext(_s,_n,_x,_y){
+	draw_sprite_ext(_s,_n,_x,_y,image_xscale,image_yscale,image_angle,image_blend,image_alpha)
+}
