@@ -3,6 +3,7 @@
 if !scoreCountup
 {
     bonus --
+    bonus = clamp(bonus, 0, 1000000)
     if random(50) < 1 {
     instance_create_depth(random(room_width),random(room_height),depth-1,objPBubble)
     }
