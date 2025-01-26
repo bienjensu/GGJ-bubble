@@ -13,6 +13,7 @@ endTimer = 0;
 endTimerMax = 25;
 fadeInTimerMax = 25;
 fadeInTimer = fadeInTimerMax;
+endSurf = -1;
 function roomEnd()
 {
     for (var i = 0 ; i < instance_number(objBubble) ; i++)
@@ -31,6 +32,6 @@ function roomEnd()
         //instance_destroy(bubble)
     }
     global.totalBubbles = bubblesLeft(totalSize);
-    instance_destroy(objBubble);
+    //instance_destroy(objBubble);
     win = true;
 }
