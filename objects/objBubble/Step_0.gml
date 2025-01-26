@@ -1,4 +1,4 @@
-var distance = point_distance(x, y, mouse_x, mouse_y);
+var distance = point_distance(x, y, objCursor.x, objCursor.y);
 
 //set initial mouse position on clicik and set grabbed status
 /*if mouse_check_button_pressed(mb_left) && distance < maxDist
