@@ -10,8 +10,8 @@ lerpSpeed = 0.2;
 fadeTimer = 0;
 fadeTimerMax = 100;
 endTimer = 0;
-endTimerMax = 50;
-fadeInTimerMax = 50;
+endTimerMax = 25;
+fadeInTimerMax = 25;
 fadeInTimer = fadeInTimerMax;
 function roomEnd()
 {
