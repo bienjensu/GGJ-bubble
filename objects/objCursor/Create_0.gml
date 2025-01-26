@@ -1,6 +1,6 @@
 grabbedBubble = noone;
 moveMult = 0.1;
-pushMult = 0.3;
+pushMult = 0.4;
 multY = 3;
 maxPower = 10;
 hitboxBuffer = 4;
