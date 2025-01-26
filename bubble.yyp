@@ -66,6 +66,7 @@
     {"id":{"name":"objKrill","path":"objects/objKrill/objKrill.yy",},},
     {"id":{"name":"objNautilus","path":"objects/objNautilus/objNautilus.yy",},},
     {"id":{"name":"objPBubble","path":"objects/objPBubble/objPBubble.yy",},},
+    {"id":{"name":"objPufferFish","path":"objects/objPufferFish/objPufferFish.yy",},},
     {"id":{"name":"objSpawnRegion","path":"objects/objSpawnRegion/objSpawnRegion.yy",},},
     {"id":{"name":"objStageController","path":"objects/objStageController/objStageController.yy",},},
     {"id":{"name":"objStarfish","path":"objects/objStarfish/objStarfish.yy",},},
