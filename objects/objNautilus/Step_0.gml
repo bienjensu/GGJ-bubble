@@ -9,7 +9,7 @@ if moveTimer == pushFrame
 if moveTimer  == 0
 {
     audio_stop_sound(sndNautilus)
-    audio_play_sound(sndNautilus,0,0,0.3)
+    audio_play_sound(sndNautilus,0,0,0.2,0,0.7)
 	moveTimer = moveTimerMax;
 	xVel = xDirection * moveSpeed;
 	image_index = 2;
