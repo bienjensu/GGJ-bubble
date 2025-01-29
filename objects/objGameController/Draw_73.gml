@@ -1,8 +1,8 @@
 var score_string = string_replace_all(string_format(global.currentScore, 8, 0), " ", "0")
 if !scoreCountup && !gameOverEnd
 {
-    var seconds = floor((stageTimer)/1000)%60
-    var minutes = floor((stageTimer)/60000)
+    var seconds = floor((stageTimer)/60)%60
+    var minutes = floor((stageTimer)/3600)
     var seconds_format = string_replace(string_format(seconds, 2, 0), " ", "0")
     var minutes_format =  string_replace(string_format(minutes, 2, 0), " ", "0")
     var time_string = string_join("",minutes_format, ":", seconds_format)

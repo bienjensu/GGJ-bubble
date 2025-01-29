@@ -6,7 +6,7 @@ yv = min(yv+0.01,yvm)
 
 
 
-if decay == 0 {
+if decay < 0 {
     instance_destroy()
 }
 
