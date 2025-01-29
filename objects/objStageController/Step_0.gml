@@ -64,7 +64,6 @@ if prePhase
             for (var j = 0 ; j < global.totalBubbles[i]; j++)
             {
                 var newBubble = instance_create_depth(spawnX,spawnY,-10,objBubble);
-                show_debug_message("size : {0}", 3-i)
                 newBubble.bubbleSize = 3-i;
                 switch newBubble.bubbleSize 
                 {   

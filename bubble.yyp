@@ -69,6 +69,7 @@
     {"id":{"name":"objGiantBubble","path":"objects/objGiantBubble/objGiantBubble.yy",},},
     {"id":{"name":"objGrabbable","path":"objects/objGrabbable/objGrabbable.yy",},},
     {"id":{"name":"objKrill","path":"objects/objKrill/objKrill.yy",},},
+    {"id":{"name":"objKrillSpawner","path":"objects/objKrillSpawner/objKrillSpawner.yy",},},
     {"id":{"name":"objMusicManager","path":"objects/objMusicManager/objMusicManager.yy",},},
     {"id":{"name":"objNautilus","path":"objects/objNautilus/objNautilus.yy",},},
     {"id":{"name":"objPBubble","path":"objects/objPBubble/objPBubble.yy",},},

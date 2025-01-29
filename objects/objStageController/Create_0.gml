@@ -55,3 +55,7 @@ if tutorial
 {
     prePhase = false;
 }
+else
+{
+    instance_create_layer(0, 0, layer, objKrillSpawner)
+}

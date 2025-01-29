@@ -70,7 +70,7 @@ if curVel > maxVel {
 	xVel = lerp(xVel, xVel * multiplier, 0.1)
 	yVel = lerp(yVel, yVel * multiplier, 0.1)
 } else {
-	xVel = lerp(xVel, 0, 0.1)
+	xVel = lerp(xVel, min(xVel,minSpeed), 0.1)
 }
 if upForce > upForceMax
 {
@@ -112,11 +112,12 @@ if place_meeting(x, y+yVel, objCollider) {
     }
     var b = bubble(x,y,0.3)
     yVel = -yVel * bounceDampening
+    yVel = max(0,1-floor(abs(yVel)))*yVel*(underBounce*(1+sign(yVel)));
     y -= yDeg
-    if abs(yVel) < 0.5
-    {
-        yVel = sign(yVel)*0.1;
-    }
+    //if abs(yVel) < 0.5
+    //{
+    //    yVel = sign(yVel)*0.1;
+    //}
 }
 y += yVel
 

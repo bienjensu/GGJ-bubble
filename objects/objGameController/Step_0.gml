@@ -72,5 +72,4 @@ else
 if !objStageController.win && !objStageController.prePhase
 {
     stageTimer ++
-    show_debug_message("win : {0} | prephase : {1} | time : {2}", objStageController.win, objStageController.prePhase, stageTimer)
 }

@@ -14,6 +14,7 @@ invulnTime = 100;
 flashTime = 5;
 bubbleSize = 3;
 bounceDampening = 0.8;
+underBounce =1.5;
 minPushDist = 50;
 maxPushDist = 100;
 pushForce = 0.05;
@@ -23,6 +24,7 @@ upForceDelayFrames = 40;
 chompTimer = -1
 gx = 1
 gy = 1
+minSpeed = 0.2;
 
 enum frames {
     IDLE,

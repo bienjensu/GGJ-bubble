@@ -8,6 +8,7 @@
   "ResourceOrderSettings":[
     {"name":"objCollider","order":1,"path":"objects/objCollider/objCollider.yy",},
     {"name":"objEnemiesRequired","order":1,"path":"objects/objEnemiesRequired/objEnemiesRequired.yy",},
+    {"name":"objKrillSpawner","order":2,"path":"objects/objKrillSpawner/objKrillSpawner.yy",},
     {"name":"objPBubble2","order":1,"path":"objects/objPBubble2/objPBubble2.yy",},
     {"name":"objTutorialBubble","order":1,"path":"objects/objTutorialBubble/objTutorialBubble.yy",},
     {"name":"rmStage02","order":6,"path":"rooms/rmStage02/rmStage02.yy",},
