@@ -49,7 +49,7 @@ if prePhase
             postFadeTimer = postFadeTimerMax
         }
     }
-    if postFadeTimer >0
+    if postFadeTimer > 0
     {
         postFadeTimer --
         if postFadeTimer == 0
@@ -83,78 +83,93 @@ if prePhase
 }
 if win
 {
-    if fadeTimer == fadeTimerMax
+    if fadeTimer > 0
     {
-        allReset = true;
-        for (var i = 0; i < array_length(bubblesPos); i++)
+        fadeTimer --
+    }
+    else
+    {
+        if !allReset
         {
-            if abs(bubblesPos[i].x - spawnX) < 1
+           allReset = true;
+           for (var i = 0; i < array_length(bubblesPos); i++)
+           {
+               if abs(bubblesPos[i].x - spawnX) < 1
+               {
+                   bubblesPos[i].x = spawnX;
+               }
+               else
+               {
+                   allReset = false;
+                   bubblesPos[i].x = lerp(bubblesPos[i].x, spawnX, lerpSpeed);
+               }
+               if abs(bubblesPos[i].y - spawnY) < 1
+               {
+                   bubblesPos[i].y = spawnY;
+               }
+               else
+               {
+                   allReset = false;
+                   bubblesPos[i].y = lerp(bubblesPos[i].y, spawnY, lerpSpeed);
+               } 
+            } 
+            if allReset
             {
-                bubblesPos[i].x = spawnX;
-            }
-            else
-            {
-                allReset = false;
-                bubblesPos[i].x = lerp(bubblesPos[i].x, spawnX, lerpSpeed);
-            }
-            if abs(bubblesPos[i].y - spawnY) < 1
-            {
-                bubblesPos[i].y = spawnY;
-            }
-            else
-            {
-                allReset = false;
-                bubblesPos[i].y = lerp(bubblesPos[i].y, spawnY, lerpSpeed);
+            endTimer = endTimerMax
             }
         }
-    }
-    else{
-        fadeTimer ++
+
     }
     if allReset
     {
         objGameController.scoreCountup = true;
-    }
-    if beginEnd
-    {
-        endTimer ++
-        if endTimer > endTimerMax
+        if beginEnd
         {
-            var isRoom = function(roomName)
+            if endTimer > 0
             {
-                return roomName = room
-            }
-            var nextRoom = global.roomsOrder[array_find_index(global.roomsOrder, isRoom)+1];
-            if nextRoom != -1
-            {
-                room_goto(nextRoom);
+                endTimer --
             }
             else
             {
-                room_goto(global.roomsOrder[0]);
+                var isRoom = function(roomName)
+                {
+                    return roomName = room
+                }
+                var nextRoom = global.roomsOrder[array_find_index(global.roomsOrder, isRoom)+1];
+                if nextRoom != -1
+                {
+                    room_goto(nextRoom);
+                }
+                else
+                {
+                    room_goto(global.roomsOrder[0]);
+                }
             }
         }
     }
 }
 if gameOver
 {
-    if fadeTimer == fadeTimerMax
+    fadeTimer = fadeTimerMax
+    if fadeTimer > 0
     {
-        beginEnd = true
+        fadeTimer --
     }
     else {
-    fadeTimer ++
+        beginEnd = true
+        endTimer = endTimerMax
     }
-    if beginEnd
+    if endTimer > 0
     {
-        endTimer ++
-        if endTimer > endTimerMax
+        endTimer --    
+    }
+    else
+    {
+        objGameController.gameOverEnd = true;
+        if mouse_check_button_pressed(mb_any)
         {
-            objGameController.gameOverEnd = true;
-            if mouse_check_button_pressed(mb_any)
-            {
-                game_end()
-            }
+            game_end()
         }
     }
+    
 }

@@ -22,4 +22,5 @@ spawned = false;
 gameOverEnd = false;
 
 // Init stage timer on controller spawn
-global.stage_timer = current_time
+stageTimer = 0;
+//global.stage_timer = current_time

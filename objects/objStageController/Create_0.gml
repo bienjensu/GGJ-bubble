@@ -10,8 +10,8 @@ win = false;
 prePhase = true;
 allReset = false;
 lerpSpeed = 0.2;
-fadeTimer = 0;
 fadeTimerMax = 100;
+fadeTimer = 0;
 endTimer = 0;
 endTimerMax = 25;
 fadeInTimerMax = 25;
@@ -45,6 +45,7 @@ function roomEnd()
     }
     global.totalBubbles = bubblesLeft(totalSize);
     //instance_destroy(objBubble);
+    fadeTimer = fadeTimerMax
     win = true;
 }
 

@@ -27,18 +27,13 @@ if mouse_check_button(mb_left)
         
         //x+= window_mouse_get_delta_x()*sensitivity
         //y+= window_mouse_get_delta_y()*sensitivity
-        powerX = (grabbedBubble.x - x)*moveMult
-        powerY = (grabbedBubble.y - y)*moveMult
-        if abs(powerX) > maxDist
-        { 
-            powerX = lerp(powerX, maxDist*sign(powerX), falloffRate)
-        }
-        if abs(powerY) > maxDist
-        {
-            powerY = lerp(powerY, maxDist*sign(powerY), falloffRate)
-        }
-        birdIdealX = grabbedBubble.x - powerX
-        birdIdealY = grabbedBubble.y - powerY
+        powerXY = -min(point_distance(grabbedBubble.x,grabbedBubble.y,x,y)*pushMult, maxPower)
+        powerX = lengthdir_x(powerXY, point_direction(grabbedBubble.x,grabbedBubble.y,x,y))
+        powerY = lengthdir_y(powerXY, point_direction(grabbedBubble.x,grabbedBubble.y,x,y))
+        var maxDistX = lengthdir_x(maxDist, point_direction(grabbedBubble.x,grabbedBubble.y,x,y))
+        var maxDistY = lengthdir_y(maxDist, point_direction(grabbedBubble.x,grabbedBubble.y,x,y))
+        birdIdealX = grabbedBubble.x - maxDistX * (powerXY/maxPower)
+        birdIdealY = grabbedBubble.y - maxDistY * (powerXY/maxPower)
     }
     else
     {
@@ -50,8 +45,8 @@ if mouse_check_button_released(mb_left) && instance_exists(grabbedBubble) //!= n
     //window_mouse_set_locked(false)
     //display_mouse_set(x,y)
     image_alpha = 0;
-    grabbedBubble.xVel += min(powerX*pushMult, maxPower)
-    grabbedBubble.yVel += min(powerY*pushMult*multY, maxPower)
+    grabbedBubble.xVel += powerX
+    grabbedBubble.yVel += powerY
     grabbedBubble.grabbed = false;
     grabbedBubble.upForce = 0;
     grabbedBubble = noone;

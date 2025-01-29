@@ -1,11 +1,10 @@
 grabbedBubble = noone;
-moveMult = 0.1;
-pushMult = 0.4;
-multY = 3;
+pushMult = 0.1;
 maxPower = 10;
 hitboxBuffer = 4;
 powerX = 0;
 powerY = 0;
+powerXY = 0;
 sensitivity = 0.2;
 maxDist = 10;
 falloffRate = 0.4;

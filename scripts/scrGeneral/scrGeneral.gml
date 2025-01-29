@@ -71,4 +71,28 @@ function bubble(_x = x, _y = y, chance = 1, decay = -1) {
     
 }
 
+function mouse_set_position(__room_pos_x, __room_pos_y) {
 
+// Sets mouse position to a position in the room
+// Accounts for window size, position, scale
+
+// Position of object in view
+var __object_pos_x          = __room_pos_x - camera_get_view_x(cam)
+var __object_pos_y          = __room_pos_y - camera_get_view_y(cam)
+
+// Scale of window -- max is what the scale of the "output" is
+var __window_scale_x            = window_get_width()    /   window_width 
+var __window_scale_y            = window_get_height()   /   window_height
+var __window_scale_output       = min(__window_scale_x, __window_scale_y)
+
+// Figure out letterbox dimensions for mismatched window size so we can offset position
+var __window_letterbox_width    = max(0, window_get_width() - (window_width*__window_scale_output))
+var __window_letterbox_height   = max(0, window_get_height() - (window_height*__window_scale_output))
+
+// Figure out monitor position
+var __monitor_pos_x         = window_get_x() + __window_letterbox_width/2 + (__object_pos_x * __window_scale_output)
+var __monitor_pos_y         = window_get_y() + __window_letterbox_height/2 + (__object_pos_y * __window_scale_output)
+
+// Set mouse pos
+display_mouse_set(__monitor_pos_x, __monitor_pos_y)
+}

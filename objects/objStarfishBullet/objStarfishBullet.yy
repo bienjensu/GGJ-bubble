@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Regular",
-    "path":"folders/Objects/Enemies/Regular.yy",
+    "path":"folders/Objects/Spawners/Enemies/Regular.yy",
   },
   "parentObjectId":{
     "name":"objEdgeWrapper",

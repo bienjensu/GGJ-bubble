@@ -62,42 +62,6 @@ else
 	invulnTimeR --
 }
 
-// Collide & reflect
-if place_meeting(x+xVel, y+yVel, objCollider) {
-    var step = 0.1
-     var belowCollider = false
-     var ixVel
-     if (place_meeting(x, y+yVel, objCollider) and yVel < 0) {
-         belowCollider = true
-         ixVel = xVel
-     }
-    while(!place_meeting(x+step*xVel, y+step*yVel, objCollider)) {
-        x += step * xVel
-        y += step * yVel
-    }
-    while(place_meeting(x, y, objCollider)) {
-        x += step * -xVel
-        y += step * -yVel
-    }
-    var b = bubble(x,y,0.3)
-    if belowCollider {
-        if ixVel > 0 {
-             xVel += 1.2
-         } else {
-             xVel -= 1.2
-         }
-         yVel += bounceDampening * 1.5
-     } else {
-         xVel = -xVel * bounceDampening
-         yVel = -yVel * bounceDampening
-     }
-}
-
-
-// Apply velocities!
-x += xVel
-y += yVel
-
 // Slow down if above max velocity
 curVel = abs(yVel) + abs(xVel)
 if curVel > maxVel {
@@ -124,6 +88,38 @@ if _i != noone {
 	_i.xVel -= dx * 0.01
 	_i.yVel -= dy * 0.01
 }
+
+// Collide & reflect
+var yDeg = 0
+var xDeg = 0
+var step = 0.1
+if place_meeting(x+xVel, y, objCollider) {
+    var stepSign = sign(xVel)
+    while(!place_meeting(x+step*xVel+(step*stepSign), y, objCollider)) {
+        x += step * xVel+(step*stepSign)
+        xDeg += step*xVel+(step*stepSign)
+    }
+    var b = bubble(x,y,0.3)
+    xVel = -xVel * bounceDampening
+    x -= xDeg
+}
+x += xVel
+if place_meeting(x, y+yVel, objCollider) {
+    var stepSign = sign(yVel) 
+    while(!place_meeting(x, y+step*yVel+(step*stepSign), objCollider)) {
+        y += step*yVel+(step*stepSign)
+        yDeg += step*yVel+(step*stepSign)
+    }
+    var b = bubble(x,y,0.3)
+    yVel = -yVel * bounceDampening
+    y -= yDeg
+    if abs(yVel) < 0.5
+    {
+        yVel = sign(yVel)*0.1;
+    }
+}
+y += yVel
+
 
 event_inherited()
 

@@ -1,5 +1,6 @@
 {
   "FolderOrderSettings":[
+    {"name":"Enemies","order":1,"path":"folders/Objects/Spawners/Enemies.yy",},
     {"name":"bg","order":6,"path":"folders/Sprites/bg.yy",},
     {"name":"enemies","order":7,"path":"folders/Sprites/enemies.yy",},
     {"name":"player","order":8,"path":"folders/Sprites/player.yy",},
