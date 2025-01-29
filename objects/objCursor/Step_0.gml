@@ -29,7 +29,7 @@ if mouse_check_button(mb_left)
         //y+= window_mouse_get_delta_y()*sensitivity
         powerXY = -min(point_distance(grabbedBubble.x,grabbedBubble.y,x,y)*pushMult, maxPower)
         powerX = lengthdir_x(powerXY, point_direction(grabbedBubble.x,grabbedBubble.y,x,y))
-        powerY = lengthdir_y(powerXY, point_direction(grabbedBubble.x,grabbedBubble.y,x,y))
+        powerY = lengthdir_y(powerXY*powerYmult, point_direction(grabbedBubble.x,grabbedBubble.y,x,y))
         var maxDistX = lengthdir_x(maxDist, point_direction(grabbedBubble.x,grabbedBubble.y,x,y))
         var maxDistY = lengthdir_y(maxDist, point_direction(grabbedBubble.x,grabbedBubble.y,x,y))
         birdIdealX = grabbedBubble.x - maxDistX * (powerXY/maxPower)

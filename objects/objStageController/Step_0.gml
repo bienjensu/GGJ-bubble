@@ -150,7 +150,6 @@ if win
 }
 if gameOver
 {
-    fadeTimer = fadeTimerMax
     if fadeTimer > 0
     {
         fadeTimer --
@@ -166,10 +165,10 @@ if gameOver
     else
     {
         objGameController.gameOverEnd = true;
-        if mouse_check_button_pressed(mb_any)
-        {
-            game_end()
-        }
+        //if mouse_check_button_pressed(mb_any)
+        //{
+            //game_end()
+        //}
     }
     
 }

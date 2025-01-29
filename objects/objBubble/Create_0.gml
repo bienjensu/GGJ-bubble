@@ -56,7 +56,8 @@ function split()
             instance_destroy();
             if instance_number(objBubble) == 0
             {
-                objStageController.gameOver = true;
+                objStageController.gameOver = true ;
+                objStageController.fadeTimer = objStageController.fadeTimerMax;
             }
 			exit;
 		}

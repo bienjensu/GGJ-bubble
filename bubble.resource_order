@@ -21,6 +21,7 @@
     {"name":"Room7","order":3,"path":"rooms/Room7/Room7.yy",},
     {"name":"Room8","order":6,"path":"rooms/Room8/Room8.yy",},
     {"name":"Room9","order":10,"path":"rooms/Room9/Room9.yy",},
+    {"name":"sprArrow","order":8,"path":"sprites/sprArrow/sprArrow.yy",},
     {"name":"sprBubble","order":4,"path":"sprites/sprBubble/sprBubble.yy",},
     {"name":"sprBubbleFaceLarge","order":1,"path":"sprites/sprBubbleFaceLarge/sprBubbleFaceLarge.yy",},
     {"name":"sprBubbleFaceMedium","order":2,"path":"sprites/sprBubbleFaceMedium/sprBubbleFaceMedium.yy",},

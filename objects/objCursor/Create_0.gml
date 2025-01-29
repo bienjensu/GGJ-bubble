@@ -5,6 +5,7 @@ hitboxBuffer = 4;
 powerX = 0;
 powerY = 0;
 powerXY = 0;
+powerYmult = 1.2;
 sensitivity = 0.2;
 maxDist = 10;
 falloffRate = 0.4;
