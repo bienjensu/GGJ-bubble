@@ -69,4 +69,8 @@ else
         }
     }
 }
+if !objStageController.win && !objStageController.prePhase
+{
+    show_debug_message("win : {0} | prephase : {1}", objStageController.win, objStageController.prePhase)
 stageTimer ++
+}

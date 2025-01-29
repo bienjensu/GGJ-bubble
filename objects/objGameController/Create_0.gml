@@ -2,7 +2,7 @@
 //score = 0
 bonus = 2000
 scoreCountup = false;
-preScoreTimer = 40;
+preScoreTimer = 50;
 showScoreTimeMax = 40;
 showScoreTimer = 0;
 postScoreTimer = 0;
