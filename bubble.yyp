@@ -86,6 +86,7 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Room10","path":"rooms/Room10/Room10.yy",},},
     {"id":{"name":"Room11","path":"rooms/Room11/Room11.yy",},},
+    {"id":{"name":"Room12","path":"rooms/Room12/Room12.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
     {"id":{"name":"Room4","path":"rooms/Room4/Room4.yy",},},
@@ -191,6 +192,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
+    {"roomId":{"name":"Room11","path":"rooms/Room11/Room11.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"rmTest","path":"rooms/rmTest/rmTest.yy",},},
     {"roomId":{"name":"Room10","path":"rooms/Room10/Room10.yy",},},
@@ -202,7 +204,7 @@
     {"roomId":{"name":"Room4","path":"rooms/Room4/Room4.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"rmWin","path":"rooms/rmWin/rmWin.yy",},},
-    {"roomId":{"name":"Room11","path":"rooms/Room11/Room11.yy",},},
+    {"roomId":{"name":"Room12","path":"rooms/Room12/Room12.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
