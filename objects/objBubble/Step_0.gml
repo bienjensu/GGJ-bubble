@@ -22,14 +22,14 @@ if !grabbed and mouse_check_button(mb_right) {
         audio_play_sound(Sndblowing,0,true,0.5,0,1)
     }
     
-	xDiff = x - mouse_x
-	yDiff = y - mouse_y
+	var xDiff = x - mouse_x
+	var yDiff = y - mouse_y
 	
-	xNorm = xDiff/distance
-	yNorm = yDiff/distance
+	var xNorm = xDiff/distance
+	var yNorm = yDiff/distance
 	
 	// Calculate falloff
-	k = 0.0
+	var k = 0.0
 	if (distance < minPushDist) {
 		k = 1.0
 	} else if (minPushDist < distance and distance < maxPushDist) {
@@ -63,10 +63,10 @@ else
 }
 
 // Slow down if above max velocity
-curVel = abs(yVel) + abs(xVel)
+var curVel = abs(yVel) + abs(xVel)
 if curVel > maxVel {
 	//show_debug_message("REDUCING")
-	multiplier = maxVel/curVel
+	var multiplier = maxVel/curVel
 	xVel = lerp(xVel, xVel * multiplier, 0.1)
 	yVel = lerp(yVel, yVel * multiplier, 0.1)
 } else {
@@ -79,10 +79,10 @@ if upForce > upForceMax
     
 yVel = lerp(yVel, upForce, 0.1)
 
-_i = instance_place(x,y,objBubble)
+var _i = instance_place(x,y,objBubble)
 if _i != noone {  
-	dx = x - _i.x
-	dy = y - _i.y
+	var dx = x - _i.x
+	var dy = y - _i.y
 	xVel += dx * 0.01
 	yVel += dy * 0.01
 	_i.xVel -= dx * 0.01

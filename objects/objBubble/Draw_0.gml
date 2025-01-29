@@ -32,8 +32,8 @@ if chompTimer == 0 {
 draw_sprite_wrapped(sprite_index,image_index,x,y,0)
 draw_sprite_wrapped(facespr,faceframe,x,y,0)
 
-image_xscale = gx
-image_yscale = gy
+//image_xscale = gx
+//image_yscale = gy
 
 /*if mouse_check_button(mb_left) && grabbed
 {

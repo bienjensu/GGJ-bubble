@@ -51,7 +51,7 @@ if !grabbed
                 var b = bubble(x+shake(20),y+shake(10),1)
                 b.yv = random_range(-1,1)
             }
-			for(i = 0; i < shotsNum; i++)
+			for(var i = 0; i < shotsNum; i++)
 			{
 			var bulletAngle = i*(360/shotsNum) + 90;
 			var bulletX = x + lengthdir_x(sprite_width/2, bulletAngle);

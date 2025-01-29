@@ -38,8 +38,10 @@ if win
 	{
 		if endSurf == -1
 		{
+            objCursor.grabbedBubble = noone;
 			instance_deactivate_all(true);
             instance_activate_object(objGameController);
+            instance_activate_object(objCursor);
 		}
 	   endSurf = surface_create(surface_get_width(application_surface), surface_get_width(application_surface));
 	   surface_set_target(endSurf);
@@ -100,8 +102,10 @@ if gameOver
 	{
 		if endSurf == -1
 		{
+            objCursor.grabbedBubble = noone;
 			instance_deactivate_all(true);
             instance_activate_object(objGameController);
+            instance_activate_object(objCursor);
 		}
 	   endSurf = surface_create(surface_get_width(application_surface), surface_get_width(application_surface));
 	   surface_set_target(endSurf);
