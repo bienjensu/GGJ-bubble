@@ -136,7 +136,7 @@ if win
                     return roomName = room
                 }
                 var nextRoom = global.roomsOrder[array_find_index(global.roomsOrder, isRoom)+1];
-                if nextRoom != -1
+                if nextRoom != -1 && nextRoom < array_length(global.roomsOrder)
                 {
                     room_goto(nextRoom);
                 }
