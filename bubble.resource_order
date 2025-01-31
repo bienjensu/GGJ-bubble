@@ -26,6 +26,7 @@
     {"name":"rmTutorial","order":4,"path":"rooms/rmTutorial/rmTutorial.yy",},
     {"name":"rmWin","order":11,"path":"rooms/rmWin/rmWin.yy",},
     {"name":"scrGlobals","order":1,"path":"scripts/scrGlobals/scrGlobals.yy",},
+    {"name":"scrSaveLoad","order":2,"path":"scripts/scrSaveLoad/scrSaveLoad.yy",},
     {"name":"sprArrow","order":8,"path":"sprites/sprArrow/sprArrow.yy",},
     {"name":"sprBubble","order":4,"path":"sprites/sprBubble/sprBubble.yy",},
     {"name":"sprBubbleFaceLarge","order":1,"path":"sprites/sprBubbleFaceLarge/sprBubbleFaceLarge.yy",},

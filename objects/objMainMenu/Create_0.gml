@@ -1,3 +1,4 @@
+loadGame()
 hitboxDown = 16;
 hitboxUp = 12;
 textLeading = 24;
@@ -54,5 +55,4 @@ credits = [
     credit : "Game Design, Music"
 },
 ]
-
 instance_create_depth(0,0,-100,objCursorMenu)

@@ -32,7 +32,8 @@ if paused
             {
                 if selection != i
                 {
-                    audio_play_sound(Sndtally, 1,0)
+                    audio_stop_sound(Sndtally)
+                    audio_play_sound(Sndtally,0,0,0.3,0.01)
                 }
                 selection = i;
                 break;
@@ -69,7 +70,8 @@ if paused
             {
                 if selection != i
                 {
-                    audio_play_sound(Sndtally, 1,0)
+                    audio_stop_sound(Sndtally)
+                    audio_play_sound(Sndtally,0,0,0.3,0.01)
                 }
                 selection = i;
                 break;
@@ -96,6 +98,7 @@ if paused
                     optionsOptions[2] = "Sensitivity : " + string(global.sensitivity+1);
                 break;
                 case 3:
+                    save()
                     options = false;
                     selection = -1;
             }
@@ -113,7 +116,8 @@ if paused
             {
                 if selection != i
                 {
-                    audio_play_sound(Sndtally, 1,0)
+                    audio_stop_sound(Sndtally)
+                    audio_play_sound(Sndtally,0,0,0.3,0.01)
                 }
                 selection = i;
                 break;
@@ -193,5 +197,66 @@ else
     if !objStageController.win && !objStageController.prePhase && !paused
     {
         stageTimer ++
+    }
+}
+
+if gameOverEnd
+{
+        if global.currentScore > global.highScore
+    {
+        highScore = true;
+    }
+    if scoreTimer > 0
+    {
+        scoreTimer --
+        if scoreTimer == 0
+        {
+            showHighScore = true;
+            showHighScoreTimer = showHighScoreTimerMax;
+            
+        }
+        if scoreTimer == floor(scoreTimerMax/2)
+        {
+            showScore = true;
+        }
+    }
+    if showHighScoreTimer > 0
+    {
+        showHighScoreTimer --
+        if showHighScoreTimer == 0
+        {
+            highScoreCountup = true;
+        }
+    }
+    if highScoreCountup
+    { 
+        if global.highScore < global.currentScore
+        { 
+            global.highScore += min(10,global.currentScore-global.highScore)
+            audio_stop_sound(Sndtally)
+            audio_play_sound(Sndtally,0,0,0.3,0.01)
+            if global.highScore == global.currentScore
+            {
+                 showScoreEndTimer = showScoreEndTimerMax;
+            }
+        }
+        if !highScore
+        {
+            showScoreEndTimer = showScoreEndTimerMax;
+        }
+    }
+    if showScoreEndTimer >0
+    {
+        showScoreEndTimer --
+        if showScoreEndTimer == 0
+        {
+            showEndMessage = true;
+        }
+    }
+    if showEndMessage && mouse_check_button_pressed(mb_any)
+    {
+        global.currentScore = 0;
+        save()
+        room_goto(rmMenu)
     }
 }

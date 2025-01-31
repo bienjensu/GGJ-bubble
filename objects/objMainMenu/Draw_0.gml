@@ -4,7 +4,7 @@ draw_set_font(fntCourier)
 if !otherMenu
 {
     draw_set_halign(fa_center);
-    draw_text(scoreX,scoreY,"Highscore : "+ string_replace_all(string_format(global.currentScore, 8, 0), " ", "0"))
+    draw_text(scoreX,scoreY,"Highscore : "+ string_replace_all(string_format(global.highScore, 8, 0), " ", "0"))
     draw_set_halign(fa_left);
     for( var i = 0; i < array_length(menuOptions); i++)
     {

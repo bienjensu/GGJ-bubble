@@ -6,7 +6,8 @@ if !otherMenu
         {
             if selection != i
                 {
-                    audio_play_sound(Sndtally, 1,0)
+                    audio_stop_sound(Sndtally)
+                    audio_play_sound(Sndtally,0,0,0.3,0.01)
                 }
             selection = i;
             break;
@@ -33,7 +34,8 @@ if menuOptions[1].action = true
         {
             if selection != i
                 {
-                    audio_play_sound(Sndtally, 1,0)
+                    audio_stop_sound(Sndtally)
+                    audio_play_sound(Sndtally,0,0,0.3,0.01)
                 }
             selection = i;
             break;
@@ -62,10 +64,12 @@ if menuOptions[1].action = true
                 objCursorMenu.sensitivity = global.sensitivity * 0.1 + 0.1;
                 optionsOptions[2] = "Sensitivity : " + string(global.sensitivity+1);
             break;
-            case 3:
+            case 3: 
+                save()
                 menuOptions[1].action = false;
                 otherMenu = false;
                 selection = -1;
+
         }
     }
 }

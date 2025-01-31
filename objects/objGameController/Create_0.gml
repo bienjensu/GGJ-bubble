@@ -11,6 +11,8 @@ beginBonusCount = false;
 showBonus = false;
 scoreposX = gamew - 16;
 scoreposY = 16;
+gameoverPosX = gamew/2;
+gameoverPosY = gameh/2;
 timeposX = 16;
 timeposY = 16;
 scorefinalposX = gamew/2
@@ -40,6 +42,17 @@ pausedSurf = -1;
 options = false;
 areYouSure = false;
 released = true;
+highScore = false;
+scoreTimer = 0;
+scoreTimerMax = 60;
+showHighScore = false;
+showScore = false;
+showHighScoreTimer = 0;
+showHighScoreTimerMax = 60;
+showEndMessage = false;
+highScoreCountup = false;
+showScoreEndTimer = 0
+showScoreEndTimerMax = 40;
 surface_free(pausedSurf);
 unPause = function()
 {

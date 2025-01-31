@@ -103,6 +103,7 @@
     {"id":{"name":"scrGlobals","path":"scripts/scrGlobals/scrGlobals.yy",},},
     {"id":{"name":"scrLevelTransition","path":"scripts/scrLevelTransition/scrLevelTransition.yy",},},
     {"id":{"name":"scrMusic","path":"scripts/scrMusic/scrMusic.yy",},},
+    {"id":{"name":"scrSaveLoad","path":"scripts/scrSaveLoad/scrSaveLoad.yy",},},
     {"id":{"name":"bgm_all","path":"sounds/bgm_all/bgm_all.yy",},},
     {"id":{"name":"bgm_drum_bass","path":"sounds/bgm_drum_bass/bgm_drum_bass.yy",},},
     {"id":{"name":"bgm_drum","path":"sounds/bgm_drum/bgm_drum.yy",},},
