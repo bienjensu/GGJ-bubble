@@ -20,7 +20,34 @@ giantSpawnX = gamew/2;
 giantSpawnY = -64;
 spawned = false;
 gameOverEnd = false;
-
 // Init stage timer on controller spawn
 stageTimer = 0;
 //global.stage_timer = current_time
+optionsYStart = 112;
+optionsX = 160 - 64;
+selection = -1;
+hitboxDown = 16;
+hitboxUp = 12;
+menuLeading = 24;
+menuOptions = ["resume","Lock mouse : " + boolToString(global.lockMouse),"Fullscreen : " + boolToString(global.fullScreen),"Sensitivity : " + string(global.sensitivity),"Main menu"]
+paused = false;
+pausedSurf = -1;
+surface_free(pausedSurf);
+unPause = function()
+{
+	paused = !paused;
+	if !paused
+	{
+		instance_activate_all();
+		surface_free(pausedSurf);
+		pausedSurf = -1;
+        objCursor.x = objCursorMenu.x;
+        objCursor.y = objCursorMenu.y;
+        instance_destroy(objCursorMenu);
+	}
+	if paused
+	{
+        instance_create_depth(objCursor.x,objCursor.y,-100,objCursorMenu)
+		selection = -1;
+	}
+}

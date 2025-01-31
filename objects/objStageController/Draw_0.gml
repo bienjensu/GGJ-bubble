@@ -11,16 +11,21 @@ if prePhase
             for (var j = 0 ; j < global.totalBubbles[i]; j++)
             {
                 var drawSprite = "" 
+                var drawSprite2 = ""
                 switch 3-i
-                {
-           			case 3: drawSprite = sprBubbleLarge
-           			break;
-           			case 2: drawSprite = sprBubbleMedium
-           			break;
-           			case 1: drawSprite = sprBubbleSmall
-           			break; 
+                { 
+                    case 3: drawSprite = sprBubbleLarge
+                            drawSprite2 = sprBubbleFaceLarge 
+                    break; 
+                    case 2: drawSprite = sprBubbleMedium
+                        drawSprite2 = sprBubbleFaceMedium 
+                    break; 
+                    case 1: drawSprite = sprBubbleSmall
+                        drawSprite2 = sprBubbleFaceSmall 
+                    break;  
                 }
-                draw_sprite(drawSprite, 0, spawnX, spawnY)
+                draw_sprite(drawSprite, 0, spawnX, spawnY);
+                draw_sprite(drawSprite2, 0, spawnX, spawnY);
             }
         }
     draw_set_color(c_white)
@@ -62,16 +67,21 @@ if win
             for (var i = 0; i < array_length(bubblesPos); i++)
             {
                 var drawSprite = ""
+                var drawSprite2 = ""
                 switch bubblesPos[i].bubbleSize 
                 {
             			case 3: drawSprite = sprBubbleLarge
+                                drawSprite2 = sprBubbleFaceLarge
             			break;
             			case 2: drawSprite = sprBubbleMedium
+                                drawSprite2 = sprBubbleFaceMedium
             			break;
             			case 1: drawSprite = sprBubbleSmall
+                                drawSprite2 = sprBubbleFaceSmall
             			break; 
                 }
                 draw_sprite(drawSprite, 0, bubblesPos[i].x,bubblesPos[i].y);
+                draw_sprite(drawSprite2, 0, bubblesPos[i].x,bubblesPos[i].y);
             }
         }
         else
@@ -81,16 +91,21 @@ if win
                 for (var j = 0 ; j < global.totalBubbles[i]; j++)
                 {
                     var drawSprite = "" 
+                    var drawSprite2 = ""
                     switch 3-i
                     { 
-                        case 3: drawSprite = sprBubbleLarge 
-                        break; 
-                        case 2: drawSprite = sprBubbleMedium 
-                        break; 
-                        case 1: drawSprite = sprBubbleSmall 
-                        break; 
+                        case 3: drawSprite = sprBubbleLarge
+                                drawSprite2 = sprBubbleFaceLarge
+            			break;
+            			case 2: drawSprite = sprBubbleMedium
+                                drawSprite2 = sprBubbleFaceMedium
+            			break;
+            			case 1: drawSprite = sprBubbleSmall
+                                drawSprite2 = sprBubbleFaceSmall
+            			break;  
                     }
-                    draw_sprite(drawSprite, 0, spawnX, spawnY)
+                    draw_sprite(drawSprite, 0, spawnX, spawnY);
+                    draw_sprite(drawSprite2, 0, spawnX, spawnY);
                     }
                 }
         }

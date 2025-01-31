@@ -27,6 +27,7 @@ draw_set_font(fntMono)
 #macro cam view_camera[0]
 
 #macro offWhite #dafffe 
+#macro menuGreen #00774a 
 
 
 function Sleep(durration){	
@@ -69,6 +70,20 @@ function bubble(_x = x, _y = y, chance = 1, decay = -1) {
         return b
     }
     
+}
+
+function boolToString(_bool)
+{
+    var _output = ""
+    switch _bool{
+        case true: 
+            _output = "on"
+            break;
+        case false:
+            _output = "off"
+            break;
+    }
+    return _output;
 }
 
 function mouse_set_position(__room_pos_x, __room_pos_y) {

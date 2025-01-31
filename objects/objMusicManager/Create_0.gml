@@ -4,7 +4,7 @@ function toggle_drum() {
     } else {
         audio_sound_gain(global.bgmDrum, 1, 100)
     }
-    global.drumPlauing = !global.drumPlaying
+    global.drumPlaying = !global.drumPlaying
 }
 
 function toggle_bass() {

@@ -19,5 +19,3 @@ birdIndex = sprCursor_click_nothing1;
 birdInst = true;
 image_alpha = 0;
 //maxDist = 0;
-event_inherited();
-
