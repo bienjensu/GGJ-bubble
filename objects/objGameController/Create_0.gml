@@ -24,14 +24,22 @@ gameOverEnd = false;
 stageTimer = 0;
 //global.stage_timer = current_time
 optionsYStart = 112;
-optionsX = 160 - 64;
+optionsX = 130;
+optionsXOffset = -34;
+aysXOffset = 8;
+aysYOffset = 8;
 selection = -1;
 hitboxDown = 16;
 hitboxUp = 12;
 menuLeading = 24;
-menuOptions = ["resume","Lock mouse : " + boolToString(global.lockMouse),"Fullscreen : " + boolToString(global.fullScreen),"Sensitivity : " + string(global.sensitivity),"Main menu"]
+menuOptions = ["Resume","Options","Main menu"]
+optionsOptions = ["Lock mouse : " + boolToString(global.lockMouse),"Fullscreen : " + boolToString(global.fullScreen),"Sensitivity : " + string(global.sensitivity),"Back"]
+aysOptions = ["Yes","No"]
 paused = false;
 pausedSurf = -1;
+options = false;
+areYouSure = false;
+released = true;
 surface_free(pausedSurf);
 unPause = function()
 {
@@ -49,5 +57,6 @@ unPause = function()
 	{
         instance_create_depth(objCursor.x,objCursor.y,-100,objCursorMenu)
 		selection = -1;
+        released = true;
 	}
 }

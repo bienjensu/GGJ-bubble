@@ -20,38 +20,116 @@ if keyboard_check_pressed(ord(3))
 }
 if paused
 {
-    for( var i = 0; i < array_length(menuOptions); i++)
+    if !options && !areYouSure
     {
-        if objCursorMenu.y > cameray+optionsYStart + (i*menuLeading) - hitboxUp && objCursorMenu.y < cameray + optionsYStart + (i*menuLeading) + hitboxDown
+        if mouse_check_button_released(mb_any)
         {
-            selection = i;
-            break;
+            released = true;
+        }
+        for( var i = 0; i < array_length(menuOptions); i++)
+        {
+            if objCursorMenu.y > cameray+optionsYStart + (i*menuLeading) - hitboxUp && objCursorMenu.y < cameray + optionsYStart + (i*menuLeading) + hitboxDown
+            {
+                if selection != i
+                {
+                    audio_play_sound(Sndtally, 1,0)
+                }
+                selection = i;
+                break;
+            }
+        }
+        if mouse_check_button_pressed(mb_any) && selection != -1 && released
+        {
+            audio_play_sound(snd2click,1,0);
+            released = false
+            switch selection{
+                case 0:
+                    unPause()
+                    objCursor.sensitivity = global.sensitivity*0.1+0.1;
+                break;
+                case 1:
+                    options = true;
+                    selection = -1;
+                break;
+                case 2:
+                    areYouSure = true;
+                    selection = -1;
+            }
         }
     }
-    if mouse_check_button_pressed(mb_any) && selection != -1
+    if options
     {
-        switch selection{
-            case 0:
-                unPause()
-                objCursor.sensitivity = global.sensitivity*0.1+0.1;
-            break;
-            case 1:
-                global.lockMouse = !global.lockMouse;
-                window_mouse_set_locked(global.lockMouse)
-                menuOptions[1] = "Lock mouse : " + boolToString(global.lockMouse);
-            break;
-            case 2:
-                global.fullScreen = !global.fullScreen
-                window_set_fullscreen(global.fullScreen)
-                menuOptions[2] = "Fullscreen : " + boolToString(global.fullScreen)
-            break;
-            case 3:
-                global.sensitivity = ((global.sensitivity + (mouse_check_button_pressed(mb_left) - mouse_check_button_pressed(mb_right))) + 10) % 10;
-                objCursorMenu.sensitivity = global.sensitivity * 0.1 + 0.1;
-                menuOptions[3] = "Sensitivity : " + string(global.sensitivity+1);
-            break;
-            case 4:
-                room_goto(rmMenu)
+        if mouse_check_button_released(mb_any)
+        {
+            released = true;
+        }
+        for( var i = 0; i < array_length(optionsOptions); i++)
+        {
+            if objCursorMenu.y > cameray+optionsYStart + (i*menuLeading) - hitboxUp && objCursorMenu.y < cameray + optionsYStart + (i*menuLeading) + hitboxDown
+            {
+                if selection != i
+                {
+                    audio_play_sound(Sndtally, 1,0)
+                }
+                selection = i;
+                break;
+            }
+        }
+        if mouse_check_button_pressed(mb_any) && selection != -1 && released
+        {
+            audio_play_sound(snd2click,1,0);
+            released = false;
+            switch selection{
+                case 0:
+                    global.lockMouse = !global.lockMouse;
+                    window_mouse_set_locked(global.lockMouse)
+                    optionsOptions[0] = "Lock mouse : " + boolToString(global.lockMouse);
+                break;
+                case 1:
+                    global.fullScreen = !global.fullScreen
+                    window_set_fullscreen(global.fullScreen)
+                    optionsOptions[1] = "Fullscreen : " + boolToString(global.fullScreen)
+                break;
+                case 2:
+                    global.sensitivity = ((global.sensitivity + (mouse_check_button_pressed(mb_left) - mouse_check_button_pressed(mb_right))) + 10) % 10;
+                    objCursorMenu.sensitivity = global.sensitivity * 0.1 + 0.1;
+                    optionsOptions[2] = "Sensitivity : " + string(global.sensitivity+1);
+                break;
+                case 3:
+                    options = false;
+                    selection = -1;
+            }
+        }
+    }
+    if areYouSure
+    {
+        if mouse_check_button_released(mb_any)
+        {
+            released = true;
+        }
+        for( var i = 0; i < array_length(aysOptions); i++)
+        {
+            if objCursorMenu.y > cameray+aysYOffset + optionsYStart + (i*menuLeading) - hitboxUp && objCursorMenu.y < cameray + +aysYOffset + optionsYStart + (i*menuLeading) + hitboxDown
+            {
+                if selection != i
+                {
+                    audio_play_sound(Sndtally, 1,0)
+                }
+                selection = i;
+                break;
+            }
+        }
+        if mouse_check_button_pressed(mb_any) && selection != -1 && released
+        {
+            audio_play_sound(snd2click,1,0);
+            released = false;
+            switch selection{
+                case 0:
+                    room_goto(rmMenu);
+                break;
+                case 1:
+                    areYouSure = false;
+            }
         }
     }
 }

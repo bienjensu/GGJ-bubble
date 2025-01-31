@@ -4,12 +4,17 @@ if !otherMenu
     {
         if objCursorMenu.y > menuYStart + (i*textLeading) - hitboxUp && objCursorMenu.y < menuYStart + (i*textLeading) + hitboxDown
         {
+            if selection != i
+                {
+                    audio_play_sound(Sndtally, 1,0)
+                }
             selection = i;
             break;
         }
     }
     if mouse_check_button_pressed(mb_any) && selection != -1
     {
+        audio_play_sound(snd2click,1,0);
         menuOptions[selection].action = true;
         otherMenu = true
         released = false;
@@ -26,6 +31,10 @@ if menuOptions[1].action = true
     {
         if objCursorMenu.y > menuYStart + (i*textLeading) - hitboxUp && objCursorMenu.y < menuYStart + (i*textLeading) + hitboxDown
         {
+            if selection != i
+                {
+                    audio_play_sound(Sndtally, 1,0)
+                }
             selection = i;
             break;
         }
@@ -36,6 +45,7 @@ if menuOptions[1].action = true
     }
     if mouse_check_button_pressed(mb_any) && selection != -1 && released
     {
+        audio_play_sound(snd2click,1,0);
         switch selection{
             case 0:
                 global.lockMouse = !global.lockMouse;
