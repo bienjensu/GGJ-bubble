@@ -93,14 +93,15 @@ if win
            allReset = true;
            for (var i = 0; i < array_length(bubblesPos); i++)
            {
-               if abs(bubblesPos[i].x - spawnX) < 1
+            var idealX = (spawnX-((array_length(bubblesPos)-1)*16)+(i*32))
+               if abs(bubblesPos[i].x - idealX) < 1
                {
-                   bubblesPos[i].x = spawnX;
+                   bubblesPos[i].x = idealX;
                }
                else
                {
                    allReset = false;
-                   bubblesPos[i].x = lerp(bubblesPos[i].x, spawnX, lerpSpeed);
+                   bubblesPos[i].x = lerp(bubblesPos[i].x, idealX, lerpSpeed);
                }
                if abs(bubblesPos[i].y - spawnY) < 1
                {
@@ -114,17 +115,48 @@ if win
             } 
             if allReset
             {
-            endTimer = endTimerMax
+            //endTimer = endTimerMax
+            objGameController.scoreCountup = true;
             }
         }
 
     }
     if allReset
     {
-        objGameController.scoreCountup = true;
+
         if beginEnd
         {
-            if endTimer > 0
+            if !allReset2
+            {
+                allReset2 = true;
+                for (var i = 0; i < array_length(bubblesPos); i++)
+                {
+                    if abs(bubblesPos[i].x - spawnX) < 1
+                    {
+                        bubblesPos[i].x = spawnX;
+                    }
+                    else
+                    {
+                        allReset2 = false;
+                        bubblesPos[i].x = lerp(bubblesPos[i].x, spawnX, lerpSpeed);
+                    }
+                    if abs(bubblesPos[i].y - spawnY) < 1
+                    {
+                        bubblesPos[i].y = spawnY;
+                    }
+                    else
+                    {
+                        allReset2 = false;
+                        bubblesPos[i].y = lerp(bubblesPos[i].y, spawnY, lerpSpeed);
+                    } 
+                    show_debug_message("moving d' bubble")
+                } 
+                if allReset2
+                {
+                    endTimer = endTimerMax 
+                }
+            }
+            if endTimer != 0
             {
                 endTimer --
             }

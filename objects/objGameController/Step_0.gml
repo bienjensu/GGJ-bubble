@@ -217,6 +217,7 @@ if gameOverEnd
         }
         if scoreTimer == floor(scoreTimerMax/2)
         {
+            audio_play_sound(Sndtally,0,0,0.3,0.01)
             showScore = true;
         }
     }
@@ -230,7 +231,7 @@ if gameOverEnd
     }
     if highScoreCountup
     { 
-        if global.highScore < global.currentScore
+        /*if global.highScore < global.currentScore
         { 
             global.highScore += min(10,global.currentScore-global.highScore)
             audio_stop_sound(Sndtally)
@@ -243,6 +244,17 @@ if gameOverEnd
         if !highScore
         {
             showScoreEndTimer = showScoreEndTimerMax;
+        }*/
+
+        if highScore
+        {
+            global.highScore = global.currentScore;
+            save()
+            showScoreEndTimer = showHighScoreTimerMax;
+        }
+        else
+        {
+            showScoreEndTimer = 1;
         }
     }
     if showScoreEndTimer >0
@@ -250,6 +262,7 @@ if gameOverEnd
         showScoreEndTimer --
         if showScoreEndTimer == 0
         {
+            audio_play_sound(Sndtally,0,0,0.3,0.01)
             showEndMessage = true;
         }
     }

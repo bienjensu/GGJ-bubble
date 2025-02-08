@@ -1,0 +1,30 @@
+gameOver = false;
+beginEnd = false;
+endTimer = -1
+endTimerMax = 40;
+gameOverEnd = false;
+highScore = false;
+showHighScore = false;
+scoreTimer = -1;
+scoreTimerMax = 60;
+showHighScore = false;
+showScore = false;
+showHighScoreTimer = -1;
+showHighScoreTimerMax = 60;
+showEndMessage = false;
+highScoreCountup = false;
+showScoreEndTimer = -1;
+showScoreEndTimerMax = 40;
+gameoverPosX = gamew/2;
+gameoverPosY = gameh/4;
+scorefinalposX = gamew/2
+scorefinalposY = gameh/4
+textLeading = 10;
+menuLeading = 24;
+fadeTimer = -1;
+fadeTimerMax = 40;
+spawnX = room_width/2;
+spawnY = room_height -32;
+instance_create_depth(spawnX, spawnY, -100, objCursor)
+endSurf = -1;
+surface_free(endSurf);

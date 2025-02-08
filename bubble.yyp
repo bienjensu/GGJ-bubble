@@ -67,6 +67,7 @@
     {"id":{"name":"objEnemiesRequired","path":"objects/objEnemiesRequired/objEnemiesRequired.yy",},},
     {"id":{"name":"objEnemySpawner","path":"objects/objEnemySpawner/objEnemySpawner.yy",},},
     {"id":{"name":"objGameController","path":"objects/objGameController/objGameController.yy",},},
+    {"id":{"name":"objGameEnd","path":"objects/objGameEnd/objGameEnd.yy",},},
     {"id":{"name":"objGiantBubble","path":"objects/objGiantBubble/objGiantBubble.yy",},},
     {"id":{"name":"objGrabbable","path":"objects/objGrabbable/objGrabbable.yy",},},
     {"id":{"name":"objKrill","path":"objects/objKrill/objKrill.yy",},},

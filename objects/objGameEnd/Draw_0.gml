@@ -1,34 +1,42 @@
 var score_string = string_replace_all(string_format(global.currentScore, 8, 0), " ", "0")
 var highscore_string = string_replace_all(string_format(global.highScore, 8, 0), " ", "0")
-if scoreCountup
+if gameOver
 {
-    draw_set_font(fntCourier)
-    var halign = draw_get_halign()
-    draw_set_color(offWhite)
-    draw_set_halign(fa_right)
-    draw_text(scorefinalposX,scorefinalposY, "SCORE: ")
-    draw_set_halign(fa_left)
-    draw_text(scorefinalposX,scorefinalposY,score_string)
-    if showBonus
-    {
-        var bonusString = string_replace_all(string_format(bonus, 8, 0), " ", "0")
-        draw_set_halign(fa_right)
-        draw_text(scorefinalposX,scorefinalposY+16+textLeading, "TIME BONUS: ")
-        draw_set_halign(fa_left)
-        draw_text(scorefinalposX,scorefinalposY+16+textLeading,bonusString)
+    if !surface_exists(endSurf)
+	{
+		if endSurf == -1
+		{
+            objCursor.grabbedBubble = noone;
+			instance_deactivate_all(true);
+            instance_activate_object(objGameController);
+            instance_activate_object(objCursor);
+		}
+	   endSurf = surface_create(surface_get_width(application_surface), surface_get_width(application_surface));
+	   surface_set_target(endSurf);
+	   draw_surface(application_surface,0,0);
+	   surface_reset_target();
+	}
+	else
+	{
+        draw_surface(endSurf, camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]));
+        draw_set_alpha(1-fadeTimer/fadeTimerMax);
+        draw_set_color(c_black);
+        gpu_set_depth(-100);
+        draw_rectangle(0,0,room_width, room_height,false);
+        gpu_set_depth(-101);
+        draw_set_alpha(1);
     }
-    draw_set_halign(halign)
-    draw_set_color(c_white)
 }
+
 if gameOverEnd
 {
     var halign = draw_get_halign()
     draw_set_font(fntCourier)
     draw_set_color(offWhite)
     draw_set_halign(fa_right)
-    draw_text(scorefinalposX,gameoverPosY,"GAME ")
+    draw_text(scorefinalposX,gameoverPosY,"CONGRAT")
     draw_set_halign(fa_left)
-    draw_text(scorefinalposX,gameoverPosY,"OVER")
+    draw_text(scorefinalposX,gameoverPosY,"ULATIONS")
     if showScore
     {
         draw_set_halign(fa_right)

@@ -9,6 +9,7 @@
     {"name":"objCollider","order":1,"path":"objects/objCollider/objCollider.yy",},
     {"name":"objCursorMenu","order":2,"path":"objects/objCursorMenu/objCursorMenu.yy",},
     {"name":"objEnemiesRequired","order":1,"path":"objects/objEnemiesRequired/objEnemiesRequired.yy",},
+    {"name":"objGameEnd","order":2,"path":"objects/objGameEnd/objGameEnd.yy",},
     {"name":"objKrillSpawner","order":2,"path":"objects/objKrillSpawner/objKrillSpawner.yy",},
     {"name":"objMainMenu","order":1,"path":"objects/objMainMenu/objMainMenu.yy",},
     {"name":"objPBubble2","order":1,"path":"objects/objPBubble2/objPBubble2.yy",},
